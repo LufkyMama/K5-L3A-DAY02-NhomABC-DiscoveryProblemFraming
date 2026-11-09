@@ -2,7 +2,7 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
+- Họ tên: Nguyễn Hoa Thanh Tùng
 - MSSV: 2A202603519
 - Email trường: 26ai.tungnht2@vinuni.edu.vn
 - Tên nhóm: NhomABC
