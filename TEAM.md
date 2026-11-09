@@ -84,3 +84,35 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Một problem tốt phải có bước nghẽn gọi tên được và có con số đo thật. Bản scan đầu của mình thiên về cảm giác "mất thời gian"; nghe các bạn pitch bằng số phút, số lần mỗi tuần mới thấy khác biệt.
 - Nhóm từng bị "solution-first" (đề xuất ngay chatbot tóm tắt). Vẽ cây OST giúp nhóm quay về câu hỏi bước nào trong quy trình đang nghẽn.
 - Phản biện "chỉ đọc mục lục và kết luận có đủ không?" khiến mình phải đưa phương án không dùng AI vào so sánh. Khi phân tích rủi ro, mình cũng thấy bằng chứng của nhóm còn yếu (chủ yếu là mô phỏng), nên quyết định phải đi kèm ngưỡng dừng rõ ràng.
+
+
+
+### BuiHuuPhuc_2A202603572
+
+**Phần việc phụ trách:**
+
+- Phụ trách CP5: Quy trình trước/sau (Before/After) và Problem Statement v0
+- Phân tích bottleneck, đề xuất quy trình cải thiện và xác định giới hạn sử dụng AI
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Xây dựng sơ đồ Mermaid mô tả quy trình hiện tại và quy trình tương lai.
+- Lập bảng chi tiết các bước, xác định Actor, Input, Output và thời gian thực hiện.
+- Phân tích bottleneck chính là người học mất nhiều thời gian đọc tài liệu để tìm ý quan trọng.
+- Đề xuất quy trình mới kết hợp Rule, AI và Human-in-the-loop (HITL), có phương án xử lý khi AI sai.
+- Hoàn thiện bảng Before/After, đưa ra các chỉ số so sánh và mục tiêu giảm thời gian chuẩn bị từ khoảng 60 phút xuống tối đa 30 phút/bài.
+- Viết Problem Statement v0 gồm Actor, Quy trình, Bottleneck, Impact, Success Metrics và Boundary.
+  
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+- File `group_report.md` – Mục 4: Quy trình trước/sau (CP5), gồm 4.1, 4.2 và 4.3.
+- File `group_report.md` – Mục 5: Problem Statement v0 (CP5).
+- Các bảng phân tích được trình bày trực tiếp trong báo cáo.
+- Commit GitHub: `3b6fef8`.
+- Báo cáo cá nhân `report/individual/2A202603572_BuiHuuPhuc.md`
+
+**Điều mình học được từ phần nhóm:**
+- Hiểu cách phân tích một vấn đề từ quy trình thực tế, xác định bottleneck trước khi đề xuất giải pháp.
+- Biết cách xây dựng quy trình Before/After và phân chia công việc giữa Rule, AI và con người.
+- Hiểu rằng AI chỉ nên hỗ trợ, các thông tin quan trọng vẫn cần con người kiểm tra.
+- Biết cách xác định Success Metrics và phân biệt số liệu hiện tại với mục tiêu kỳ vọng.
+- Nhận ra rằng giảm thời gian thực hiện chưa chắc đã mang lại kết quả tốt hơn, cần kiểm chứng cả chất lượng đầu ra.
