@@ -97,49 +97,76 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 ### 3.1. Assumption Map
 
+Phạm vi: candidate #7 — chuẩn bị bài đọc 10–20 trang trước buổi học. Điểm quan trọng: 1 = ít ảnh hưởng, 5 = nếu sai phải đổi hướng. Điểm bằng chứng: 1 = chưa có, 5 = có nhiều bằng chứng trực tiếp nhất quán.
+
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+| 1 | Người học ngoài nhóm cũng thường mất từ 45 phút/bài đọc 10–20 trang, lặp lại ít nhất 2 bài/tuần và bị ảnh hưởng tới việc chuẩn bị bài. | Value | 5 | 2 | ✅ |
+| 2 | Bước nghẽn chủ yếu là phải đọc nhiều phần để biết chỗ nào quan trọng; không chủ yếu do từ vựng, thiếu kiến thức nền hoặc bị gián đoạn. | Value | 5 | 2 | ✅ |
+| 3 | Có thể giảm thời gian chuẩn bị mà không giảm khả năng hiểu và vận dụng nội dung chính so với cách đọc hiện tại. | Value | 5 | 1 | _ |
+| 4 | Người học sẵn sàng mở lại tài liệu gốc để kiểm ý chính và đọc kỹ phần quan trọng, thay vì chỉ đọc bản tóm tắt. | Usability | 4 | 1 | _ |
+| 5 | Công cụ có sẵn có thể xử lý tài liệu nhóm chọn và đưa ra câu trả lời/ghi chú truy được về đoạn hoặc trang gốc. | Feasibility | 4 | 3 | ✅ |
+| 6 | Tài liệu được phép dùng trong công cụ lựa chọn, tài khoản truy cập được và chi phí nằm trong khả năng của người học. | Viability | 5 | 1 | _ |
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+**Kế hoạch phỏng vấn thật:** 2 người học ngoài nhóm, khoảng 5 phút/người, từng đọc tài liệu trước buổi học gần đây.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+**Interview Snapshot PV01**
 
-| Trường | Nội dung |
+| Trường | Nội dung mô phỏng |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Nguyễn Trường An | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành. |
+| Thời điểm, hình thức, người phỏng vấn | Trò chuyện trực tiếp sau giờ học, khoảng 5 phút. |
+| Lần gần nhất: tài liệu, số trang, việc đã xảy ra | “Buổi trước mình được giao đọc 18 trang về hồi quy tuyến tính. Mình chưa biết phần nào sẽ dùng trên lớp nên đọc từ đầu, rồi mới chọn ý để ghi.” |
+| Quy trình, thời gian từng bước và nguồn số liệu | Lướt mục lục 5' → đọc tuần tự 30' → gạch ý 10' → ghi chú 10' → đánh dấu câu hỏi 5'. Phải đọc tuần tự để tìm phần quan trọng. |
+| Workaround và kết quả thực tế | “Mình gạch những câu có vẻ quan trọng, đọc lại kết luận rồi chép vào ghi chú. Cuối cùng ghi khá nhiều nhưng khó chọn vài ý để trả lời câu hỏi trên lớp.” |
+| Ảnh hưởng khi vào lớp và cách tự kiểm | “Mình nhớ định nghĩa nhưng khi được hỏi khi nào nên dùng mô hình thì phải mở lại tài liệu. Trước buổi học mình chưa tự trả lời câu hỏi nào.” |
+| Tần suất và trường hợp đọc nhanh | “Khoảng 3 bài/tuần, tức 6 bài trong hai tuần. Bài nào giảng viên cho câu hỏi trước thì mình dễ chọn đoạn để đọc hơn, nhưng chưa ghi thời gian để so sánh.” |
+| Câu nói đáng nhớ | “Mình đọc hết rồi mới biết đoạn nào cần ghi kỹ.” |
+| Tín hiệu xác nhận, phản bác và insight | |
 
-Tổng hợp:
+**Interview Snapshot PV02**
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
+| Trường | Nội dung mô phỏng |
+|---|---|
+| Nguyễn Thị Bích | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất. Không có người tham gia thực tế. |
+| Thời điểm, hình thức, người phỏng vấn | Trao đổi qua cuộc gọi khoảng 5 phút sau khi chuẩn bị bài. |
+| Lần gần nhất: tài liệu, số trang, việc đã xảy ra | “Mình đọc 15 trang về đánh giá mô hình. Giảng viên đã chỉ phần cần đọc, nhưng mình phải dừng ở các thuật ngữ precision, recall và xác suất có điều kiện.” |
+| Quy trình, thời gian từng bước và nguồn số liệu | Chọn phần cần đọc 5' → đọc phần liên quan 10' → tra thuật ngữ/kiến thức nền 25' → ghi chú 10' → ghi câu hỏi 5'. |
+| Workaround và kết quả thực tế | “Mình tra từ điển và mở slide cũ. Có lần đọc bản tóm tắt do bạn chia sẻ thì biết nội dung nói về gì, nhưng vẫn phải xem ví dụ mới hiểu.” |
+| Ảnh hưởng khi vào lớp và cách tự kiểm | “Mình nhận ra công thức nhưng chưa giải thích được vì sao chọn chỉ số đó cho bài toán. Khi làm ví dụ mới thấy mình chưa hiểu đủ.” |
+| Tần suất và trường hợp đọc nhanh | “Mỗi tuần khoảng 2 bài, hai tuần gần đây là 4 bài. Với chủ đề đã học thì mình ít phải tra cứu hơn; mình chưa bấm giờ từng bài.” |
+| Câu nói đáng nhớ | “Mình biết cần đọc phần nào, nhưng chưa hiểu thuật ngữ trong phần đó.” |
+| Tín hiệu xác nhận, phản bác và insight | |
+
+**Tổng hợp hiện có:**
+
+| Nguồn | Quy mô / loại dữ liệu | Tín hiệu xác nhận | Tín hiệu phản bác / giới hạn |
 |---|---:|---|---|
-| | | | |
+| Báo cáo cá nhân của Minh, CP1–CP2 | 1 người trong nhóm, tự báo cáo | Khoảng 60 phút/bài, 2–3 bài/tuần; bước đọc toàn bộ khoảng 35 phút. Là dữ kiện ban đầu để đặt giả định về thời gian chuẩn bị. | Cần làm rõ số lượt đo và cách đo; chưa chứng minh pain phổ biến ở người ngoài nhóm hoặc AI sẽ cải thiện việc học. |
+| PV01 — khó xác định phần cần đọc | 1 tình huống mô phỏng AI | Trong kịch bản: 60 phút/bài, 3 bài/tuần; đọc tuần tự 30 phút vì chưa biết phần quan trọng. Minh họa pain về định hướng đọc. | Chưa thử đọc theo câu hỏi định hướng; chưa có căn cứ rằng giải pháp No AI không đủ. Mọi số liệu đều giả định. |
+| PV02 — thiếu thuật ngữ và kiến thức nền | 1 tình huống mô phỏng AI | Trong kịch bản: 55 phút/bài, 2 bài/tuần; tra thuật ngữ/kiến thức nền chiếm 25 phút. Minh họa khó khăn chuẩn bị bài. | Bottleneck là hiểu khái niệm, không phải tìm ý chính; tóm tắt ngắn hơn chưa giải quyết nguyên nhân. Mọi số liệu đều giả định. |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhận định từ bộ mô phỏng để chuẩn bị kiểm chứng thật:**
+
+- PV01 và PV02 đều mô tả thời gian chuẩn bị dài, nhưng có nguyên nhân khác nhau. Khi phỏng vấn thật cần xác định từng bước và nguyên nhân, thay vì chỉ hỏi tổng thời gian.
+- Phạm vi cần xem xét là người học chưa xác định được phần phải đọc kỹ theo mục tiêu buổi học; trường hợp thiếu kiến thức nền cần được phân tích riêng.
 
 ### 3.3. Research giải pháp đã có
 
+**Phạm vi research:** 
+
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Google NotebookLM / Gemini Notebook (tên hiển thị trên trang trợ giúp) | [Use chat in Gemini Notebook](https://support.google.com/gemininotebook/answer/16179559?hl=en) | Có thể hỗ trợ bước 2, 4, 5 bằng hỏi đáp trên nguồn được chọn, lưu câu trả lời thành ghi chú và mở citation để xem ngữ cảnh. | Tài liệu chính thức mô tả chọn nguồn trả lời, dẫn nguồn và chế độ Learning Guide. | Tính năng không chứng minh mức hiểu bài hoặc mức giảm thời gian; Google lưu ý công cụ có thể sai. Cần thử file và quyền truy cập thực tế. | Có công cụ sẵn để thử hỗ trợ đọc; chỉ dùng nguồn được chọn và kiểm đoạn gốc, chưa có căn cứ tự xây agent. |
+| Adobe Acrobat AI Assistant | [Hỏi đáp PDF](https://helpx.adobe.com/acrobat/desktop/use-acrobat-ai/generative-ai-features/ai-get-answers.html); [Giới hạn và dẫn nguồn](https://helpx.adobe.com/acrobat/desktop/use-acrobat-ai/understand-usage-policies/user-disclosures.html) | Có thể hỗ trợ bước 2 và 5: hỏi nội dung PDF, nhận câu trả lời có dẫn nguồn và mở phần liên quan trong tài liệu. | Hỏi đáp và xem vị trí nguồn trong cùng môi trường đọc PDF. | Adobe nêu câu trả lời và dẫn nguồn có thể sai; cần kiểm lại. Chưa kiểm điều kiện tài khoản, chi phí và mức phù hợp với ngôn ngữ tài liệu của nhóm. | Citation giúp kiểm tra, không bảo đảm câu trả lời đủ hoặc đúng; phải tính thời gian kiểm nguồn vào tổng thời gian chuẩn bị. |
+| Zotero PDF Reader + ghi chú (phương án No AI) | [PDF Reader and Note Editor](https://www.zotero.org/support/pdf_reader) | Hỗ trợ bước 3–4: đánh dấu, thêm annotation vào ghi chú và quay lại trang PDF gốc. | Có chức năng tạo note từ annotation và liên kết về trang PDF, giúp giữ ngữ cảnh ghi chú. | Người học vẫn tự chọn ý và đọc hiểu; các chức năng này không tự xác định phần quan trọng theo mục tiêu buổi học. Chưa đo mức tiết kiệm thời gian. | Thử cách đọc có câu hỏi định hướng + ghi chú có nguồn làm đối chứng; có thể đã đủ mà không cần AI. |
+
+**Kết luận research:**
+- Phần hỏi đáp tài liệu có dẫn nguồn và phần ghi chú liên kết trang đã có công cụ hỗ trợ. Nên thử phương án sẵn có trước khi cân nhắc phát triển công cụ riêng.
+- Research chưa chứng minh người học cần AI, đạt dưới 30 phút/bài, hoặc giữ nguyên chất lượng hiểu bài. Những điều này vẫn cần phỏng vấn và đo thử.
+- Nếu dùng AI, hướng thử đề xuất là: xác định mục tiêu đọc → hỏi/rút ý có dẫn nguồn → người học đọc đoạn quan trọng và kiểm lại → tự kiểm bằng câu hỏi độc lập.
 
 ---
 
