@@ -40,7 +40,6 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 ### Bảng chọn top 3
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
-|---:|---|---|---|
 | 1 |Tóm tắt ngữ cảnh & review Pull Request |Quy trình lặp lại hằng ngày, actor rõ ràng, bottleneck đọc code chiếm phần lớn thời gian, đo lường được baseline |AI có phát hiện được lỗi logic nghiệp vụ sâu hay chỉ soi được syntax/style? |
 | 2 |Điều tra log lỗi Production|Pain point lớn, ảnh hưởng trực tiếp đến SLA/uptime của hệ thống, tốn nhiều chất xám để kết nối các manh mối|Log hệ thống có quá dài/nhiều dữ liệu nhạy cảm khiến context window và bảo mật bị hạn chế không? |
 | 3 |Viết test cases/Unit Test cho feature mới|Tốn thời gian lặp đi lặp lại, dev thường ngại viết test dẫn đến giảm test coverage|Test do AI sinh ra có đúng format framework và mock data hợp lý không? |
