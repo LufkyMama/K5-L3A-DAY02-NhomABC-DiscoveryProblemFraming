@@ -20,7 +20,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 |Lặp lại|Khi chuẩn bị cập nhật OKR vào cuối tháng , tôi muốn nhanh chóng thu thập các metric từ jira, google data studio để chèn vào slide, tránh việc mở từng báo cáo một  | PM,EM|2h/tuần( mở 3 dashboard, sao chép 5 cột dữ liệu |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
