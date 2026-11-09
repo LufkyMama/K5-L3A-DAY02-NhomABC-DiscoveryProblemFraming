@@ -24,9 +24,9 @@
 | 4 | Nguyễn Hoa Thanh Tùng | Khi chọn đề tài đồ án, tôi muốn so sánh 5-7 bài báo cùng chủ đề theo phương pháp và kết quả, để chọn hướng khả thi | Sinh viên năm cuối chọn đề tài đồ án, đọc bài báo tiếng Anh | Đọc 5-7 bài (20-40 trang/bài) và ghi chú phương pháp, kết quả: 2-3 ngày | |
 | 5 | Nguyễn Hoa Thanh Tùng | Khi viết báo cáo thực tập, tôi muốn gom nhật ký công việc hằng ngày thành các mục theo tuần, để không phải nhớ lại cuối kỳ | Thực tập sinh nộp báo cáo cho trường và mentor | Đọc lại nhật ký 8-10 tuần, phân loại và viết thành mục báo cáo: 3-4 giờ (ước tính) | |
 | 6 | Nguyễn Hoa Thanh Tùng | Khi chuẩn bị thuyết trình nhóm, tôi muốn biết slide nào bị trùng nội dung hoặc thiếu ý so với dàn bài, để buổi chạy thử không phải sửa lại | Nhóm 3-5 sinh viên làm bài thuyết trình 15-20 slide | Rà soát 15-20 slide đối chiếu dàn bài: 20-30 phút (ước tính), vẫn sót đến buổi chạy thử | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
+| 7 | Vũ Nguyễn Hoàng Minh | Khi phải đọc tài liệu 10–20 trang trước buổi học, tôi muốn nắm ý chính và phần cần đọc kỹ, để vào lớp hiểu kịp | Học viên chuẩn bị bài trước buổi học | Đọc toàn bộ tài liệu: ~35 phút trong tổng ~60 phút/bài | |
+| 8 | Vũ Nguyễn Hoàng Minh | Khi bắt đầu tuần học, tôi muốn thấy mọi deadline ở một chỗ, để không lỡ hạn nộp | Học viên học nhiều môn/lab cùng lúc | Cuộn tin nhắn nhóm tìm hạn: ~7 phút trong ~16 phút/tuần | |
+| 9 | Vũ Nguyễn Hoàng Minh | Khi cần tìm lại slide/ghi chú tuần trước, tôi muốn tìm ra đúng file ngay, để không phải mở từng thư mục | Học viên khi ôn bài hoặc làm lab | Đoán sai nơi lưu qua Drive, LMS, chat: ~7 phút/lần trong ~10 phút/lần | |
 | 10 | | | | | |
 | 11 | | | | | |
 | 12 | | | | | |
