@@ -39,8 +39,6 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 ### BuiTheAnh-2A202603546
 
-> Các nội dung dưới đây được tổng hợp từ báo cáo cá nhân, bài nhóm, lịch sử commit và phiên làm việc có AI hỗ trợ. Phần chuẩn bị câu hỏi, bảng điểm và ví dụ kiểm chứng có dùng AI; không ghi việc chuẩn bị thành phỏng vấn hoặc hỏi đáp trực tiếp đã diễn ra.
-
 **Phần việc phụ trách:**
 
 - Phần cá nhân: CP1 scan 6 problem; CP2 chuẩn bị 3 Problem Card và quy trình nháp; cập nhật nhật ký tham gia nhóm, dùng AI và bản nháp CP7.
