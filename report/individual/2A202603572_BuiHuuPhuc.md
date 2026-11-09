@@ -38,7 +38,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 ## 3. Top 3 Problem Cards + quy trình nháp (CP2)
 
 ### Bảng chọn top 3
-
+|---|---|---|---|
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 | 1 |Tóm tắt ngữ cảnh & review Pull Request |Quy trình lặp lại hằng ngày, actor rõ ràng, bottleneck đọc code chiếm phần lớn thời gian, đo lường được baseline |AI có phát hiện được lỗi logic nghiệp vụ sâu hay chỉ soi được syntax/style? |
 | 2 |Điều tra log lỗi Production|Pain point lớn, ảnh hưởng trực tiếp đến SLA/uptime của hệ thống, tốn nhiều chất xám để kết nối các manh mối|Log hệ thống có quá dài/nhiều dữ liệu nhạy cảm khiến context window và bảo mật bị hạn chế không? |
