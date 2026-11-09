@@ -15,7 +15,7 @@
 | 1 | Vũ Nguyễn Hoàng Minh | 2A202603541 | Leader | LufkyMama |
 | 2 | | | | |
 | 3 | Bùi Thế Anh | 2A202603546 | Chấm điểm shortlist CP3; chuẩn bị kiểm chứng và research CP4 | theanh1972069-jr |
-| 4 | | | | |
+| 4 | Bùi Hữu Phúc | 2A202603572 | Vẽ quy trình trước/sau (CP5); viết Problem Statement v0 | phucbui66 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
