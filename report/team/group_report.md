@@ -46,15 +46,26 @@
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian người học và dev phải tự đọc, tìm, đối chiếu và tổng hợp thông tin bằng tay mỗi tuần, mà không bỏ sót ý hoặc yêu cầu quan trọng
+├── Opportunity A: Phải đọc hết tài liệu, bài báo, PR hoặc log dài mới biết phần nào quan trọng (#4, #7, #10, #11)
+├── Opportunity B: Tài liệu và deadline nằm rải rác ở nhiều nơi, mất thời gian đoán chỗ lưu và lục tìm (#2, #8, #9)
+├── Opportunity C: Khó tự phát hiện bài làm còn thiếu hoặc trùng so với đề bài, dàn bài trước khi nộp (#1, #6)
+├── Opportunity D: Dữ liệu ghi rời rạc theo thời gian, cuối kỳ phải nhớ lại và phân loại lại từ đầu (#3, #5)
+└── Opportunity E: Phần việc lặp lại theo khuôn bị ngại làm nên hay bị bỏ qua (#12)
+     ✗ "AI tóm tắt tài liệu trước buổi học"         ← solution, gạch khỏi tầng này
+     ✗ "Công cụ tìm kiếm tài liệu bằng AI"           ← solution, gạch khỏi tầng này
+     ✗ "Lịch chung / Google Calendar gom deadline"   ← solution, gạch khỏi tầng này
+     ✗ "Checklist tự động kiểm bài lab"              ← solution, gạch khỏi tầng này
+     ✗ "Bot tóm tắt Pull Request"                    ← solution, gạch khỏi tầng này
+     ✗ "AI tự sinh unit test"                        ← solution, gạch khỏi tầng này
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
--
+- "AI tóm tắt tài liệu trước buổi học" (#7): đây là cách giải. Pain thật là phải đọc hết mới biết phần nào cần đọc kỹ, nên đưa vào Opportunity A.
+- "Công cụ tìm kiếm tài liệu bằng AI" (#2, #9) và "Lịch chung / Google Calendar gom deadline" (#8): đều là công cụ. Pain thật là thông tin nằm rải rác, mất thời gian đoán chỗ lưu, nên đưa vào Opportunity B.
+- "Checklist tự động kiểm bài lab" (#1): là tính năng. Pain thật là khó tự thấy bài còn thiếu yêu cầu nào, nên đưa vào Opportunity C.
+- "Bot tóm tắt Pull Request" (#10) và "AI tự sinh unit test" (#12): tên candidate trong bảng pitch đang viết theo dạng giải pháp. Nhóm viết lại thành pain là "đọc code mất phần lớn thời gian review" (Opportunity A) và "viết test lặp lại nên hay bị bỏ qua" (Opportunity E).
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
