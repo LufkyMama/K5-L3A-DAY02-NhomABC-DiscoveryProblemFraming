@@ -27,9 +27,9 @@
 | 7 | Vũ Nguyễn Hoàng Minh | Khi phải đọc tài liệu 10–20 trang trước buổi học, tôi muốn nắm ý chính và phần cần đọc kỹ, để vào lớp hiểu kịp | Học viên chuẩn bị bài trước buổi học | Đọc toàn bộ tài liệu: ~35 phút trong tổng ~60 phút/bài | |
 | 8 | Vũ Nguyễn Hoàng Minh | Khi bắt đầu tuần học, tôi muốn thấy mọi deadline ở một chỗ, để không lỡ hạn nộp | Học viên học nhiều môn/lab cùng lúc | Cuộn tin nhắn nhóm tìm hạn: ~7 phút trong ~16 phút/tuần | |
 | 9 | Vũ Nguyễn Hoàng Minh | Khi cần tìm lại slide/ghi chú tuần trước, tôi muốn tìm ra đúng file ngay, để không phải mở từng thư mục | Học viên khi ôn bài hoặc làm lab | Đoán sai nơi lưu qua Drive, LMS, chat: ~7 phút/lần trong ~10 phút/lần | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 10 |Tóm tắt ngữ cảnh & review Pull Request |Quy trình lặp lại hằng ngày, actor rõ ràng, bottleneck đọc code chiếm phần lớn thời gian, đo lường được baseline |AI có phát hiện được lỗi logic nghiệp vụ sâu hay chỉ soi được syntax/style? |  |
+| 11 |Điều tra log lỗi Production|Pain point lớn, ảnh hưởng trực tiếp đến SLA/uptime của hệ thống, tốn nhiều chất xám để kết nối các manh mối|Log hệ thống có quá dài/nhiều dữ liệu nhạy cảm khiến context window và bảo mật bị hạn chế không? |  |
+| 12 |Viết test cases/Unit Test cho feature mới|Tốn thời gian lặp đi lặp lại, dev thường ngại viết test dẫn đến giảm test coverage|Test do AI sinh ra có đúng format framework và mock data hợp lý không? |  |
 
 ### 2.2. Cluster
 
