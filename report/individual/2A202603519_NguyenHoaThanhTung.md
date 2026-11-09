@@ -169,22 +169,23 @@ và có thể phát sinh thêm một buổi chỉnh sửa nếu bỏ sót
 | **Card #2:** Nếu nhật ký được ghi theo biểu mẫu thống nhất ngay từ đầu kỳ thì phương án không dùng AI đã có thể giải quyết phần lớn vấn đề. AI chỉ thực sự cần thiết khi xử lý các nhật ký cũ được ghi chép tự do. | Đồng ý | Làm rõ rằng phương án không dùng AI có hiệu quả khi được áp dụng từ đầu kỳ, trong khi giải pháp AI tập trung vào việc xử lý dữ liệu nhật ký đã có và chưa được chuẩn hóa. |
 | **Card #2:** Thời gian tổng hợp 3-4 giờ mới là ước tính. Hơn nữa, nhu cầu này chỉ phát sinh khoảng một lần mỗi kỳ thực tập nên mức độ tác động chưa thực sự lớn. | Đồng ý | Xếp Card #2 ở vị trí thứ hai và giữ nhãn "(ước tính)" đối với thời gian xử lý để kiểm chứng trong lần tổng hợp tiếp theo. |
 | **Card #3:** Bằng chứng về vấn đề hiện chỉ dựa trên hai lần chạy thử, trong khi tần suất phát sinh tương đối thấp. | Đồng ý | Xếp Card #3 ở vị trí thứ ba và bổ sung hạn chế về tần suất phát sinh cũng như số lượng bằng chứng vào cột "Những điểm cần kiểm chứng". |
+
 ---
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 3 card: so sánh 5-7 bài báo khi chọn đề tài, gom nhật ký thực tập thành báo cáo, rà slide trùng/thiếu ý so với dàn bài. Mỗi card có actor, bottleneck có thời gian, các bước chưa bấm giờ ghi "(ước tính)". | Thành hàng #4-#6 trong bảng pitch 2.1 (commit `809e1c1`). Card #4 vào shortlist 3 candidate (27/35) |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: #1 "Có thể dùng checklist và peer review để giải quyết vấn đề này không? AI mang lại giá trị gì vượt trội hơn?"; #7 "Nếu AI tóm tắt thiếu một kiến thức quan trọng, người học làm thế nào để nhận ra phần bị thiếu?"; #8 "Làm thế nào để tránh AI nhận nhầm một ngày được nhắc trong tin nhắn thành deadline?"; #9 "Có cần AI không nếu chỉ chuẩn hóa thư mục và cách đặt tên file?"; #10 "Linter hoặc SonarQube đã giải quyết được phần nào của vấn đề?"; #12 "Coverage cao có đồng nghĩa với chất lượng kiểm thử tốt không?" | Câu hỏi về #7 (AI tóm tắt thiếu ý) được nhóm đưa vào Phản biện 2 ở mục 5 và thành lý do chọn "bỏ sót tệ hơn báo nhầm" ở 6.4. Các câu "không có AI thì đã đủ chưa" đẩy nhóm đưa phương án No AI vào so sánh (commit `d02b083`) |
+| Nhận phản biện | Câu hỏi tôi nhận được (từ Vũ Nguyễn Hoàng Minh): #4 "Trong 2-3 ngày đó, bước nào tốn nhiều nhất: đọc tiếng Anh, tìm phần phương pháp hay lập bảng so sánh?" và "Nếu chỉ đọc abstract và kết luận để loại bớt bài trước thì còn phải đọc đầy đủ bao nhiêu bài?"; #5 "Con số 3-4 giờ là ước tính hay đã bấm giờ?" | Tôi đã sửa gì: Với #5, xác nhận 3-4 giờ là ước tính; card đã có nhãn "(ước tính)" và bảng phản biện ở mục 3 ghi sẽ kiểm chứng ở lần tổng hợp tiếp theo. Với #4, chưa sửa card vì card không được nhóm chọn; ghi nhận nếu đào sâu cần tách 2-3 ngày thành thời gian từng bước (đọc tiếng Anh, tìm phần phương pháp, lập bảng so sánh) và thử lọc bằng abstract, kết luận trước để biết còn bao nhiêu bài phải đọc đầy đủ |
+| Gom cluster / cây OST | Viết cây OST mục 2.3 dựa trên 5 cluster của Minh: 1 outcome chung, 5 opportunity viết dưới dạng pain; gạch 6 ý là solution đội lốt opportunity và ghi lý do | Mục 2.3 (commit `3bc50fb`). Chỉ ra tên candidate #10-#12 đang viết theo dạng giải pháp |
+| Chọn candidate problem | Card #4 của tôi được chấm 27/35, thấp nhất shortlist; nhóm chọn #7 của Minh (32/35) | Mục 2.4. Ý kiến của tôi về việc loại #4: đồng ý. Card #4 chỉ xảy ra khoảng 1 lần mỗi kỳ, thời gian 2-3 ngày chưa tách theo bước, và muốn kiểm tra AI so sánh đúng phương pháp, kết quả của bài báo thì cần người hiểu chuyên ngành, khó làm trong một buổi lab. #7 lặp lại 2-3 lần/tuần nên đo được nhiều lần hơn |
+| Kiểm chứng / research | Không phụ trách (Bùi Thế Anh làm). Khi rà báo cáo theo CHECKPOINTS, tôi phát hiện PV01/PV02 là dữ liệu mô phỏng do AI tạo nhưng đang đặt ở vị trí bằng chứng, ô "Người được hỏi" ghi tên người | Báo lại cho nhóm; trong 6.2 và 6.4 tôi không dùng PV01/PV02 làm bằng chứng mà ghi rõ "bằng chứng còn thiếu" |
+| Quy trình nhóm | Thêm bước con người "lướt mục lục, tiêu đề mục để đối chiếu xem AI có bỏ sót mục nào" vào quy trình tương lai 4.2 | 4.3 đổi thành 7 bước, 5/7 bước do con người làm (commit `31bc527`) |
+| Problem Statement | Không phụ trách (Bùi Hữu Phúc viết v0, Vũ Nguyễn Hoàng Minh viết v1) | Mức chọn trong v1 lấy theo kết luận ở 6.2 của tôi: Workflow có điều kiện chạy đối chứng No AI trước |
+| Mức can thiệp AI | Viết mục 6.1-6.4: ma trận (mơ hồ cao × phức tạp thấp), so sánh 4 mức, chọn Workflow có điều kiện, AI Canvas 6 ô, 2 câu PAIR (augment; bỏ sót tệ hơn báo nhầm, kèm 5 cách xử lý) | Mục 6 (commit `31bc527`). Ghi rõ nhóm chưa có bằng chứng thật rằng No AI không đủ |
+| Quyết định | Không phụ trách (Minh viết mục 8) | Quyết định Not Yet dựa một phần vào nhận định ở 6.2 rằng chưa có bằng chứng No AI không đủ |
 
 ---
 
@@ -192,12 +193,12 @@ và có thể phát sinh thêm một buổi chỉnh sửa nếu bỏ sót
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Rà cách viết Job Story theo worksheet sau khi đã tự scan đủ 10 problem | Chỉ ra #4 sai chủ thể (lăng kính "Pain từ người khác" nhưng viết "tôi"), #5 tình huống quá chung, #6 chỉ là mong muốn chung | Không đáng kể | Giữ 3 góp ý sửa câu chữ; giữ nguyên toàn bộ số liệu ở cột "Dấu hiệu thật", không để AI thêm hay ước lượng số |
+| CP2 Problem Card | Soạn nháp 3 card và rà theo CHECKPOINTS, RUBRIC | Rà ra các lỗi định dạng và thiếu nhãn so với rubric | Lần đầu AI chọn 3 problem mà phần lớn không cần AI; sau khi sửa vẫn sót: bước 3 thiếu thời gian, Job Story lệch mẫu cp01, lý do loại #8 và #10 viết như đã có kết quả, thiếu nhãn "(ước tính)", metric (2) của card #2 không có baseline | Đổi sang #3, #7, #9 là các problem thật sự cần đọc/tổng hợp nhiều thông tin; tự viết lại cp02 rồi bắt AI sửa từng lỗi trên |
+| CP4 Research | Rà mục 3 theo CHECKPOINTS (không viết nội dung CP4) | Phát hiện snapshot mô phỏng đang được dùng như bằng chứng thật | - | Không lấy PV01/PV02 làm bằng chứng ở phần mình viết |
+| CP5 Quy trình | Rà tính nhất quán giữa 4.2, 4.3 và 6.4 | Phát hiện 6.4 nhắc tới bước đối chiếu mục lục nhưng sơ đồ 4.2 không có | Lỗi này do chính AI tạo ra khi soạn nháp 6.4 | Chọn thêm bước vào 4.2 thay vì ghép vào bước kiểm nguồn; cập nhật 4.3 |
+| CP5–6 Problem Statement | Không dùng | - | - | - |
+| CP6 Mức can thiệp / quyết định | Soạn nháp 6.1-6.4 theo worksheet CP6 | Đưa ra khung so sánh 4 mức và 6 ô AI Canvas đầy đủ | Nháp 6.4 thêm bước "lướt mục lục để đối chiếu" nhưng không sửa sơ đồ 4.2, làm 2 mục mâu thuẫn nhau. Câu PAIR "augment" chỉ suy ra từ mục đích của việc đọc trước, không có bằng chứng từ người dùng thật. Lý do "vì sao không chọn mức đơn giản hơn" chưa dựa trên kết quả thử phương án No AI | Thêm bước đối chiếu mục lục vào 4.2 và cập nhật 4.3; giữ câu ghi "chưa có bằng chứng thật rằng No AI không đủ" và đặt Workflow là lựa chọn có điều kiện, phải chạy đối chứng No AI trước; thêm câu hỏi phỏng vấn để kiểm chứng câu "augment" |
 
 ---
 
@@ -207,20 +208,85 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Khi nghe các bạn trình bày Top 3 Problem Cards, mình nhận ra rằng cùng một vấn đề tưởng chừng đơn giản nhưng khi phân tích kỹ sẽ có nhiều khía cạnh khác nhau. Một problem tốt không chỉ cần mô tả được nhu cầu của người dùng mà còn phải xác định rõ actor, thời điểm phát sinh, quy trình hiện tại và bước thực sự gây tốn thời gian.
+
+Ví dụ, problem chuẩn bị bài đọc trước buổi học của Minh không đơn thuần là việc sinh viên phải đọc tài liệu dài, mà bottleneck nằm ở việc phải đọc tuần tự khoảng 30-35 phút chỉ để xác định phần nào cần đọc kỹ theo mục tiêu buổi học. Điều này giúp mình hiểu rằng cần phân biệt giữa tổng thời gian thực hiện một công việc và thời gian thực sự bị lãng phí ở một bước cụ thể.
+
+Ngoài ra, mình cũng học được cách đánh giá một problem dựa trên tần suất xuất hiện và khả năng kiểm chứng. Problem của mình về so sánh bài báo khoa học có thời gian xử lý khá dài, khoảng 2-3 ngày, nhưng lại không xuất hiện thường xuyên. Trong khi đó, problem chuẩn bị bài đọc của Minh lặp lại 2-3 lần mỗi tuần nên thuận lợi hơn khi thu thập dữ liệu và đánh giá hiệu quả.
+
+Một điểm khác mình học được là không phải vấn đề nào cũng cần AI giải quyết. Một số problem có thể được xử lý bằng checklist, biểu mẫu hoặc chuẩn hóa quy trình. Vì vậy, khi nghe các bạn trình bày, mình bắt đầu quan tâm nhiều hơn đến câu hỏi: nếu không sử dụng AI thì người dùng có thể giải quyết vấn đề bằng cách nào?
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Theo mình, nhóm đã từng có thời điểm bị solution-first khi bắt đầu thảo luận về cách giải quyết candidate problem. Có những ý tưởng ban đầu được diễn đạt trực tiếp dưới dạng giải pháp như chatbot tóm tắt tài liệu, công cụ tìm kiếm bằng AI hoặc tự động tạo nội dung. Khi đó, nhóm có xu hướng tập trung vào việc xây dựng sản phẩm có tính năng gì thay vì xác định chính xác người dùng đang gặp khó khăn ở bước nào.
+
+Mình nhận ra điều này rõ hơn khi tham gia xây dựng cây Opportunity Solution Tree (OST) ở CP3. Nhiệm vụ của mình là tổng hợp các opportunity từ 5 cluster của Minh và kiểm tra những ý tưởng nào thực chất đang là solution được viết dưới dạng problem. Qua quá trình này, mình nhận thấy nhiều candidate chưa mô tả pain của người dùng mà đã mặc định AI là cách giải quyết.
+
+Nhóm đã xử lý bằng cách quay lại xác định outcome chung, sau đó phân loại các opportunity theo khó khăn thực tế của người dùng. Những ý tưởng mang tính giải pháp như AI tóm tắt PR, AI sinh unit test hay AI tóm tắt tài liệu được gạch khỏi tầng opportunity của cây OST.
+
+Ngoài ra, trong CP5 và CP6, nhóm tiếp tục phân tích quy trình hiện tại, xác định bottleneck rồi mới xem xét mức độ phù hợp của AI. Mình cũng đề xuất bổ sung bước con người lướt mục lục và tiêu đề các mục để kiểm tra xem AI có bỏ sót nội dung hay không.
+
+Qua trải nghiệm này, mình hiểu rằng cần xác định vấn đề trước, sau đó mới tìm giải pháp. Nếu bắt đầu bằng một công nghệ hoặc ý tưởng sản phẩm có sẵn, nhóm rất dễ cố gắng tìm vấn đề để hợp lý hóa giải pháp đó.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Có. Một lần khiến mình thay đổi cách nhìn là khi Problem Card về việc so sánh bài báo khoa học để lựa chọn đề tài đồ án của mình bị phản biện, cả ở bước phản biện bằng AI trong CP2 lẫn khi Minh đặt câu hỏi lúc pitch.
+
+Ban đầu, mình đánh giá problem này khá cao vì việc đọc 5-7 bài báo, mỗi bài dài 20-40 trang, có thể mất khoảng 2-3 ngày. Mình cho rằng AI có thể giúp đọc, trích xuất phương pháp và kết quả nghiên cứu để tiết kiệm đáng kể thời gian. Tuy nhiên, khi nhận được phản biện về việc đã có những công cụ AI hỗ trợ đọc tài liệu khoa học, mình nhận ra rằng chưa thể khẳng định cần xây dựng một giải pháp mới nếu các công cụ hiện có đã đáp ứng phần lớn nhu cầu.
+
+Một vấn đề khác được đặt ra là nếu AI diễn giải sai phương pháp hoặc kết quả nghiên cứu thì sinh viên có đủ khả năng phát hiện không, đặc biệt khi chưa đọc tài liệu gốc. Minh cũng hỏi nếu chỉ đọc abstract và kết luận để loại bớt bài trước thì còn phải đọc đầy đủ bao nhiêu bài. Điều này khiến mình nhận ra rằng tiết kiệm thời gian không phải tiêu chí duy nhất để đánh giá hiệu quả của giải pháp, và mình chưa thử phương án đơn giản nhất.
+
+Sau khi cân nhắc, mình đồng ý với việc không ưu tiên candidate này trong lựa chọn cuối cùng của nhóm. Mình cũng đồng tình với việc đưa phương án No AI vào so sánh trước khi quyết định mức độ can thiệp của AI.
+
+Qua lần phản biện này, mình thay đổi quan điểm từ việc tập trung vào khả năng AI giúp tiết kiệm thời gian sang việc đánh giá xem AI có thực sự tạo ra giá trị vượt trội so với các phương án đơn giản hơn hay không.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều khiến mình chú ý nhất trong quá trình kiểm chứng là khoảng cách giữa việc nhận định một giải pháp có tiềm năng và việc có đủ bằng chứng để khẳng định giải pháp đó thực sự cần thiết.
+
+Trong CP4, nhóm có thực hiện research các công cụ hiện có như Google NotebookLM/Gemini Notebook, Adobe Acrobat AI Assistant và Zotero. Qua đó, mình nhận thấy nhiều công cụ đã hỗ trợ một số công đoạn trong quy trình đọc, tìm kiếm và quản lý tài liệu. Điều này khiến mình nhận ra rằng trước khi đề xuất xây dựng sản phẩm riêng, cần đánh giá khả năng tận dụng các công cụ hiện có.
+
+Tuy nhiên, mình cũng nhận thấy một hạn chế quan trọng trong kết quả kiểm chứng của nhóm. Hai snapshot PV01 và PV02 được sử dụng để minh họa thực chất là dữ liệu mô phỏng do AI tạo ra, không phải kết quả phỏng vấn người dùng thật. Vì vậy, chúng không thể được sử dụng làm bằng chứng xác nhận các giả định về pain của người dùng.
+
+Mình đã phát hiện vấn đề này khi rà soát báo cáo theo CHECKPOINTS và nhắc nhóm phân biệt rõ dữ liệu mô phỏng với bằng chứng thực tế. Đối với phần mình phụ trách, mình không sử dụng các snapshot này để khẳng định một nhận định đã được kiểm chứng.
+
+Vì vậy, mình không thể nói rằng kết quả phỏng vấn hay survey khiến mình bất ngờ, bởi nhóm chưa thực hiện được hoạt động kiểm chứng với người dùng thật. Điều mình rút ra là research về công cụ có thể giúp hiểu khả năng công nghệ, nhưng không thể thay thế việc phỏng vấn và đo lường pain thực tế. Đây cũng là một trong những lý do khiến nhóm lựa chọn Not Yet thay vì quyết định triển khai ngay.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Theo mình, điều khó nhất khi viết Problem Statement là chuyển một mô tả vấn đề còn chung chung thành một vấn đề cụ thể, có thể kiểm chứng và không chứa sẵn giải pháp.
+
+Ban đầu, khi nhìn vào problem chuẩn bị bài đọc trước buổi học, rất dễ mô tả đơn giản rằng sinh viên mất nhiều thời gian đọc tài liệu và cần AI tóm tắt nội dung. Tuy nhiên, cách diễn đạt này chưa làm rõ được nguyên nhân thực sự gây tốn thời gian, cũng như chưa chứng minh AI là phương án phù hợp.
+
+Problem Statement v0 của nhóm do Phúc viết và v1 do Minh viết; mình không trực tiếp viết mà đọc lại khi làm mục 6.1-6.4 và khi thêm bước đối chiếu mục lục vào quy trình tương lai ở CP5. Khó khăn mình tự gặp là lúc viết 3 Problem Card ở CP2, ví dụ metric (2) của card #2 ban đầu không có baseline. Từ đó mình nhận thấy cần phân tích kỹ từng bước của quy trình hiện tại để xác định bottleneck. Sau đó phải làm rõ actor, input, output, thời gian thực hiện, impact và success metric. Các con số cũng cần phân biệt giữa số liệu thực tế, số liệu tự báo cáo và số liệu ước tính.
+
+Một khó khăn khác là xác định boundary cho AI. Không thể mặc định giao toàn bộ quy trình cho AI chỉ vì AI có thể thực hiện một số công đoạn. Với bài đọc trước buổi học, nếu AI bỏ sót một kiến thức quan trọng thì người học có thể không nhận ra mình đang thiếu kiến thức đó. Vì vậy, nhóm phải xác định rõ phần nào AI được thực hiện, phần nào cần con người kiểm tra và cách xử lý khi AI đưa ra kết quả không chính xác.
+
+Qua đó, mình hiểu rằng Problem Statement không chỉ là mô tả một vấn đề mà còn phải tạo cơ sở cho việc thiết kế quy trình, lựa chọn mức can thiệp AI và đánh giá hiệu quả sau này.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu được làm lại, mình sẽ dành nhiều thời gian hơn cho việc kiểm chứng problem ngay từ CP1 và CP2 thay vì tập trung chủ yếu vào việc hoàn thiện nội dung Problem Card. Với các con số về thời gian, mình sẽ cố gắng bấm giờ thực tế theo từng bước để xác định chính xác bottleneck, thay vì chỉ đưa ra tổng thời gian ước tính.
+
+Ví dụ, với problem so sánh bài báo khoa học của mình, mình sẽ tách riêng thời gian tìm kiếm, sàng lọc abstract, đọc phương pháp, phân tích kết quả và lập bảng so sánh. Đồng thời, mình sẽ thử phương án đọc abstract và kết luận trước để xác định có thể loại bỏ bao nhiêu bài mà không cần đọc toàn bộ. Điều này giúp đánh giá chính xác hơn mức độ cần thiết của giải pháp AI.
+
+Đối với hoạt động nhóm, mình sẽ phản biện mạnh hơn ở hai điểm. Thứ nhất, phương án No AI đã thực sự được thử nghiệm hay chưa và có đáp ứng được success metric không. Mình cho rằng đây là điều kiện quan trọng trước khi quyết định sử dụng AI, đặc biệt khi nhóm chưa có bằng chứng chứng minh các phương pháp đơn giản không đủ hiệu quả.
+
+Thứ hai, mình sẽ yêu cầu nhóm làm rõ cách kiểm chứng chất lượng đầu ra của AI. Chẳng hạn, với bài đọc trước buổi học, nếu AI bỏ sót một nội dung quan trọng thì chỉ kiểm tra tính chính xác của những gì AI đã tóm tắt là chưa đủ. Cần có cách phát hiện cả những nội dung không được AI đề cập.
+
+Ngoài ra, mình sẽ chú ý hơn đến tính nhất quán giữa các phần trong báo cáo. Trong CP6, mình phát hiện bước đối chiếu mục lục được nhắc tới ở mục 6.4 nhưng chưa có trong sơ đồ quy trình tương lai ở CP5. Nếu làm lại, mình sẽ kiểm tra sự thống nhất giữa Problem Statement, quy trình và AI Canvas ngay từ đầu để hạn chế việc phải sửa nhiều lần.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán của nhóm là học viên phải đọc tài liệu dài 10-20 trang trước buổi học, khoảng 2-3 bài mỗi tuần, mất trung bình 60 phút mỗi bài, trong đó 30-35 phút dành cho việc đọc tuần tự để xác định nội dung cần đọc kỹ. Nhóm phân tích quy trình hiện tại để xác định bottleneck, sau đó đề xuất quy trình mới kết hợp Rule, AI và Human-in-the-loop. Hiệu quả được đánh giá thông qua metric như giảm thời gian chuẩn bị từ 60 phút xuống tối đa 30 phút mỗi bài, đồng thời mức hiểu bài không được thấp hơn phương án No AI và không bỏ sót kiến thức quan trọng. Boundary được xác định bằng cách để AI hỗ trợ đọc và gợi ý nội dung có dẫn nguồn, còn con người kiểm tra nguồn, đối chiếu mục lục và sử dụng câu hỏi đánh giá độc lập để kiểm tra mức độ hiểu bài. Nhóm lựa chọn mức Workflow thay vì Agent vì quy trình có các bước tương đối rõ ràng, có thể phân chia giữa Rule, AI và con người. Tuy nhiên, Workflow chỉ là lựa chọn có điều kiện, vì nhóm chưa có bằng chứng chứng minh phương án No AI không đáp ứng được nhu cầu. Do đó, quyết định cuối cùng là Not Yet, cần kiểm chứng với người dùng thật và thử nghiệm phương án No AI trước khi quyết định có triển khai giải pháp AI hay không.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- [docs/01-worksheet.md](../../docs/01-worksheet.md): Job Story, Problem Card, OST, ma trận độ mơ hồ × độ phức tạp, 4 mức can thiệp, AI Canvas, Google PAIR.
+- [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md): bài mẫu để đối chiếu format.
+- [CHECKPOINTS.md](../../CHECKPOINTS.md), [RUBRIC.md](../../RUBRIC.md): yêu cầu và tiêu chí chấm.
+- Teresa Torres, *Continuous Discovery Habits*: Opportunity Solution Tree.
+- Anthropic, [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents): phân biệt Workflow và Agent.
+- Google PAIR, [People + AI Guidebook](https://pair.withgoogle.com/guidebook/): augment/automate, các loại lỗi của AI.

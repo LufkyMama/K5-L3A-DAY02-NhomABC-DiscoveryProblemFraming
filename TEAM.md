@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Vũ Nguyễn Hoàng Minh | 2A202603541 | Leader | LufkyMama |
-| 2 | | | | |
+| 2 | Nguyễn Hoa Thanh Tùng | 2A202603519 | Cây OST (CP3); mức can thiệp AI 6.1-6.4 (CP6); hỗ trợ quy trình tương lai (CP5) | bluet52hz |
 | 3 | Bùi Thế Anh | 2A202603546 | Chấm điểm shortlist CP3; chuẩn bị kiểm chứng và research CP4 | theanh1972069-jr |
 | 4 | Bùi Hữu Phúc | 2A202603572 | Vẽ quy trình trước/sau (CP5); viết Problem Statement v0 | phucbui66 |
 
@@ -134,3 +134,37 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Hiểu rằng AI chỉ nên hỗ trợ, các thông tin quan trọng vẫn cần con người kiểm tra.
 - Biết cách xác định Success Metrics và phân biệt số liệu hiện tại với mục tiêu kỳ vọng.
 - Nhận ra rằng giảm thời gian thực hiện chưa chắc đã mang lại kết quả tốt hơn, cần kiểm chứng cả chất lượng đầu ra.
+
+### NguyenHoaThanhTung-2A202603519
+
+> Phần nhóm do mình phụ trách (cây OST, mục 6.1-6.4, bước bổ sung ở 4.2-4.3) có dùng AI (Claude) soạn nháp, mình đọc lại, chọn hướng và chỉnh trước khi commit. Câu hỏi phản biện trong bảng pitch được chọn từ danh sách câu hỏi gợi ý đã chuẩn bị trước. Chi tiết chỗ dùng AI ghi ở mục 5 báo cáo cá nhân.
+
+**Phần việc phụ trách:**
+
+- Phần cá nhân: CP1 scan 10 problem trải đủ 4 lăng kính; CP2 3 Problem Card (#3 so sánh bài báo chọn đề tài, #7 gom nhật ký thực tập, #9 rà slide trùng/thiếu ý) kèm quy trình nháp và bảng phản biện AI.
+- CP3: pitch 3 card (#4-#6 trong bảng pitch), đặt câu hỏi phản biện cho card của Bùi Thế Anh, Vũ Nguyễn Hoàng Minh và Bùi Hữu Phúc; viết cây OST rút gọn.
+- CP5: hỗ trợ quy trình tương lai, thêm bước con người đối chiếu mục lục để phát hiện AI bỏ sót.
+- CP6: viết mục 6.1-6.4 (ma trận, so sánh 4 mức, AI Canvas, 2 câu hỏi PAIR).
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Điền 3 dòng pitch #4-#6 với Job Story, actor và bottleneck có thời gian; các bước chưa bấm giờ được ghi rõ "(ước tính)".
+- Thêm câu hỏi phản biện cho #1-#3 và #7-#12, tập trung vào: phương án không dùng AI (checklist, chuẩn hóa thư mục, Linter) đã đủ chưa, AI xử lý thế nào khi bỏ sót hoặc nhận nhầm thông tin, và cách kiểm chứng đầu ra của AI.
+- Viết cây OST: 1 outcome chung, 5 opportunity ứng với cluster A-E viết dưới dạng pain; gạch bỏ 6 ý là solution đội lốt opportunity (tóm tắt bằng AI, tìm kiếm bằng AI, Google Calendar, checklist tự động, bot tóm tắt PR, AI sinh unit test) và ghi lý do từng ý.
+- Viết mục 6.1-6.4: đặt bài vào ô mơ hồ cao × phức tạp thấp; so sánh 4 mức và chọn Workflow có điều kiện (phải thử No AI làm đối chứng trước, nếu No AI đạt mục tiêu thì hạ xuống No AI); AI Canvas đủ 6 ô, ghi rõ dữ liệu đầu vào chưa chắc có; PAIR chọn augment và xác định bỏ sót tệ hơn báo nhầm, kèm 5 cách thiết kế để giảm bỏ sót.
+- Phát hiện mục 6.4 nhắc tới bước đối chiếu mục lục nhưng sơ đồ 4.2 chưa có, nên thêm bước này vào 4.2 và cập nhật bảng 4.3 thành 7 bước, 5/7 bước do con người làm.
+- Rà báo cáo nhóm theo CHECKPOINTS và RUBRIC, báo cho nhóm: snapshot PV01/PV02 là dữ liệu mô phỏng nhưng đang đặt ở vị trí bằng chứng, ô "Người được hỏi" ghi tên người, sơ đồ Mermaid nằm trong khối text nên không hiển thị.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- [Báo cáo cá nhân](report/individual/2A202603519_NguyenHoaThanhTung.md), mục 2-3 (CP1, CP2): commit `3fb6ab7`, `87cc262`.
+- [Báo cáo nhóm](report/team/group_report.md), mục 2.1 (pitch #4-#6): commit `809e1c1`; câu hỏi phản biện ghi tên Nguyễn Hoa Thanh Tùng ở #1-#3, #7-#12: commit `d02b083`.
+- [Báo cáo nhóm](report/team/group_report.md), mục 2.3 (cây OST): commit `3bc50fb`.
+- [Báo cáo nhóm](report/team/group_report.md), mục 6.1-6.4 và bước bổ sung ở 4.2, 4.3: commit `31bc527`.
+
+**Điều mình học được từ phần nhóm:**
+
+- Opportunity và solution rất dễ lẫn: nhiều candidate trong bảng pitch được đặt tên theo giải pháp ("tóm tắt PR", "AI sinh unit test"). Viết cây OST buộc mình viết lại thành pain trước khi nghĩ cách giải.
+- Chọn mức can thiệp phải bắt đầu từ mức đơn giản nhất. Khi chưa có bằng chứng rằng No AI không đủ, chọn Workflow chỉ là có điều kiện, không phải kết luận.
+- Với bài đọc trước buổi học, AI bỏ sót nguy hiểm hơn báo nhầm vì người học không biết mình đang thiếu gì; thiết kế cần có bước con người đối chiếu và câu hỏi kiểm tra độc lập với bản tóm tắt của AI.
+- Dữ liệu mô phỏng chỉ dùng để luyện cách phân tích, không thay được kiểm chứng với người thật.
