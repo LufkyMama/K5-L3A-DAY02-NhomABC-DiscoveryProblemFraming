@@ -150,9 +150,9 @@ HIỆN TẠI — 80 phút/task
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
+| Quy trình nhóm |thực hiện xây dựng CP5, xây dựng sơ đồ quy trình hiện tại và tương lai bằng Mermaid, lập bảng các bước, phân tích bottleneck, phân chia Rule/AI/Human, xác định HITL và fallback |Giúp nhóm làm rõ quy trình trước/sau, xác định điểm nghẽn và đề xuất giảm thời gian chuẩn bị từ 60 phút xuống mục tiêu ≤ 30 phút/bà |
+| Problem Statement |hoàn thiện Problem Statement v0 dựa trên CP3–CP4, xác định Actor, Quy trình, Bottleneck, Impact, Success Metrics và Boundary của AI |Giúp nhóm xác định rõ vấn đề cần giải quyết, mục tiêu đo lường, giới hạn AI và cơ sở kiểm chứng giải pháp |
+| Mức can thiệp AI |Tôi đề xuất sử dụng AI Workflow kết hợp Rule và Human-in-the-loop, có bước kiểm tra nguồn và phương án quay về quy trình thủ công khi AI sai |Giúp nhóm có phương án can thiệp AI để so sánh với No AI và Rule, tránh phụ thuộc hoàn toàn vào A |
 | Quyết định | | |
 
 ---
