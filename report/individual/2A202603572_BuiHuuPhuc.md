@@ -40,6 +40,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 ### Bảng chọn top 3
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
+|---|---|---|---|
 | 1 |Tóm tắt ngữ cảnh & review Pull Request |Quy trình lặp lại hằng ngày, actor rõ ràng, bottleneck đọc code chiếm phần lớn thời gian, đo lường được baseline |AI có phát hiện được lỗi logic nghiệp vụ sâu hay chỉ soi được syntax/style? |
 | 2 |Điều tra log lỗi Production|Pain point lớn, ảnh hưởng trực tiếp đến SLA/uptime của hệ thống, tốn nhiều chất xám để kết nối các manh mối|Log hệ thống có quá dài/nhiều dữ liệu nhạy cảm khiến context window và bảo mật bị hạn chế không? |
 | 3 |Viết test cases/Unit Test cho feature mới|Tốn thời gian lặp đi lặp lại, dev thường ngại viết test dẫn đến giảm test coverage|Test do AI sinh ra có đúng format framework và mock data hợp lý không? |
@@ -51,11 +52,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Job Story | Khi nhận được một Pull Request từ đồng nghiệp (200–400 LOC), tôi muốn nhanh chóng hiểu mục đích thay đổi và logic chính, để đưa ra review chất lượng và duyệt PR trong vòng 15 phút|
 | Actor |Senior / Mid Backend Developer đóng vai trò Code Reviewer trong team phát triển. |
 | Thời điểm / bối cảnh | Mỗi khi có thông báo review PR trên GitHub/GitLab trong giờ làm việc (khoảng 3–4 PR/ngày)|
-| Quy trình hiện tại (3–7 bước) |1. Mở PR, đọc description & ticket Jira liên quan
-2. Xem danh sách files changed để nắm cấu trúc
-3. Đọc từng file code, suy luận luồng dữ liệu và tìm lỗi logic
-4. Viết comment góp ý trên từng dòng code 
-5. Approve hoặc Request Changes |
+| Quy trình hiện tại (3–7 bước) |1. Mở PR, đọc description & ticket Jira liên quan  2. Xem danh sách files changed để nắm cấu trúc  3. Đọc từng file code, suy luận luồng dữ liệu và tìm lỗi logic  4. Viết comment góp ý trên từng dòng code   5. Approve hoặc Request Changes |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3: Đọc hiểu luồng code và rà soát lỗi logic: mất trung bình 25 phút/PR, rất dễ mệt mỏi và mất tập trung khi PR đổi nhiều file |
 | Impact (nếu không giải thì sao) |PR bị nghẽn (pending review trung bình 1.5 ngày), dev chờ review bị context switching; reviewer đọc vội dễ để lọt bug lên staging/production.|
 | Success metric (baseline → target) | Tổng thời gian review 1 PR giảm từ 47 phút → dưới 20 phút; Tỉ lệ bug lọt qua sau review không tăng|
@@ -80,11 +77,7 @@ HIỆN TẠI — 47 phút/PR
 | Job Story |	Khi hệ thống bắn alert lỗi 500 trên kênh Slack, tôi muốn nhanh chóng tìm ra file code và dòng gây lỗi cùng payload gây crash, để tạo hotfix trong vòng 30 phút|
 | Actor |On-call Developer / Backend Developer phụ trách trực vận hành|
 | Thời điểm / bối cảnh | Khi có sự cố đột xuất hoặc alert từ Sentry/Datadog gửi về Slack (khoảng 2–3 lần/tuần)|
-| Quy trình hiện tại (3–7 bước) |1. Nhận alert Slack, bấm link mở Sentry/Datadog
-2. Copy error message và trace ID tìm trong log server (Kibana/CloudWatch)
-3. Đọc stack trace, đối chiếu commit code gần nhất để tìm root cause
-4. Tái hiện lỗi ở môi trường local với payload lỗi
-5. Viết code sửa lỗi & tạo hotfix PR |
+| Quy trình hiện tại (3–7 bước) |1. Nhận alert Slack, bấm link mở Sentry/Datadog  2. Copy error message và trace ID tìm trong log server (Kibana/CloudWatch)  3. Đọc stack trace, đối chiếu commit code gần nhất để tìm root cause  4. Tái hiện lỗi ở môi trường local với payload lỗi  5. Viết code sửa lỗi & tạo hotfix PR |
 | Bottleneck (bước nào, mất bao nhiêu phút) |Bước 3: Đọc stack trace & phân tích commit gần nhất: mất 25 phút, phải lục nhiều tab và liên hệ giữa log trừu tượng với code thực tế|
 | Impact (nếu không giải thì sao) |Thời gian MTTR (Mean Time To Recovery) kéo dài, ảnh hưởng trải nghiệm người dùng cuối, vi phạm SLA hệ thống|
 | Success metric (baseline → target) |Thời gian định vị root cause giảm từ 38 phút (bước 1+2+3) → dưới 10 phút; Tỉ lệ chẩn đoán đúng root cause ngay lần đầu đạt > 80%|
@@ -109,11 +102,7 @@ HIỆN TẠI — 73 phút/sự cố
 | Job Story |	Khi hoàn thành logic một API endpoint mới, tôi muốn có bộ Unit Test bao phủ đủ các case biên (edge cases), để tự tin merge code mà không làm crash các module khác|
 | Actor |Backend Developer (Node.js/Python/Go)|
 | Thời điểm / bối cảnh |Cuối mỗi sprint task khi chuẩn bị tạo Pull Request (2–3 task/tuần)|
-| Quy trình hiện tại (3–7 bước) |1. Đọc lại requirement để liệt kê các test case cần viết
-2. Viết file setup, mock database và dependencies 
-3. Viết từng test case chi tiết cho các kịch bản thành công và lỗi
-4. Chạy test suite và kiểm tra code coverage
-5. Sửa lỗi test fail|
+| Quy trình hiện tại (3–7 bước) |1. Đọc lại requirement để liệt kê các test case cần viết  2. Viết file setup, mock database và dependencies   3. Viết từng test case chi tiết cho các kịch bản thành công và lỗi  4. Chạy test suite và kiểm tra code coverage  5. Sửa lỗi test fail|
 | Bottleneck (bước nào, mất bao nhiêu phút) |Bước 3: Viết chi tiết từng test case và chuẩn bị mock data: mất 35 phút, công việc nặng tính boilerplate và gõ phím lặp lại |
 | Impact (nếu không giải thì sao) | Dev có xu hướng bỏ qua test hoặc chỉ viết test sơ sài (happy path), khiến coverage thấp (<50%), kỹ thuật nợ (tech debt) tăng cao|
 | Success metric (baseline → target) |	Thời gian viết test giảm từ 80 phút → dưới 30 phút/task; Unit test coverage duy trì tối thiểu > 75%. |
