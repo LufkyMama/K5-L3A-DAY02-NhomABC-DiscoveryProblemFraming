@@ -21,10 +21,10 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
 | 1 |Lặp lại|Khi chuẩn bị cập nhật OKR vào cuối tháng , tôi muốn nhanh chóng thu thập các metric từ jira, google data studio để chèn vào slide, tránh việc mở từng báo cáo một  | PM,EM|2h/tuần( mở 3 dashboard, sao chép 5 cột dữ liệu |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
+| 2 |Tốn thời gian |Khi nhận phản hồi khách hàng và muốn tổng hợp pain chính cho product-team, tôi phải đọc toàn bộ chuỗi mail và comment trên Confluence |PM,Customer Succes |40-50 phút/Tuần, 10-15 email |
+| 3 |Cần đọc, tổng hợp |Khi đánh giá hiệu xuất, tôi cần đánh giá số story point đã hoàn thành, velocity và bug count qua 4-6 sprint gần nhất |PM,EM,CEO |30 phút/đợt mỗi 2-3 tuần |
+| 4 |Pain từ người khác |khi designer hỏi về định dạng UI đã được chấp nhận trong sprint trước, tôi phải tìm lại các tin nhắn trên Slack + file Figma để trả lời |Designer,PM |12-15 phút/ mỗi yêu cầu, 3-4 yêu cầu/tuần |
+| 5 |Pain từ người khác |khi CEO yêu cầu đánh giá rủi ro của dự án hiện tại trong buổi họp leadership, tôi phải điều tra các issue chưa đóng trong Jira, truy vấn comment trong slack và tham khảo tài liệu Confluence để đưa ra bản tóm tắt ngắn gọn |CEO,PM|20 phút/mỗi lần (họp 2-3 lần/tuần) |
 | 6 | | | | |
 | 7 | | | | |
 | 8 | | | | |
