@@ -164,8 +164,8 @@ HIỆN TẠI — 80 phút/task
 | CP1 Scan | | | | |
 | CP2 Problem Card | | | | |
 | CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
+| CP5 Quy trình | dùng AI hỗ trợ xây dựng sơ đồ Mermaid, bảng quy trình hiện tại và tương lai, phân tích bottleneck và phân chia Rule/AI/Human |AI giúp hệ thống hóa các bước, trình bày quy trình rõ ràng, đề xuất HITL và fallback khi AI sa |AI đưa ra thời gian xử lý kỳ vọng nhưng chưa có số liệu thực nghiệm chứng minh |đối chiếu với dữ liệu CP3–CP4, giữ thời gian hiện tại khoảng 60 phút/bài và xác định ≤ 30 phút chỉ là mục tiêu cần kiểm chứng |
+| CP5–6 Problem Statement | dùng AI hỗ trợ tổng hợp Actor, Quy trình, Bottleneck, Impact, Success Metrics và Boundary từ các phần trước |AI giúp diễn đạt vấn đề ngắn gọn, liên kết điểm nghẽn với chỉ số đo lường và giới hạn sử dụng AI |AI có xu hướng đề xuất giải pháp trước khi chứng minh vấn đề và đưa ra các chỉ số chưa được đo thực tế |Tôi tập trung mô tả pain thực tế, phân biệt baseline với target, bổ sung yêu cầu kiểm chứng và không xem AI là giải pháp bắt buộc |
 | CP6 Mức can thiệp / quyết định | | | | |
 
 ---
@@ -175,19 +175,24 @@ HIỆN TẠI — 80 phút/task
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Qua việc xem 3 vấn đề được nhóm chọn, tôi nhận ra rằng không phải vấn đề nào mất nhiều thời gian cũng cần dùng AI để giải quyết. Mỗi vấn đề đều có nguyên nhân khác nhau và cần xác định rõ người gặp vấn đề là ai, khó khăn nằm ở bước nào. Tôi cũng học được rằng khi chọn một vấn đề, không chỉ xem nó có hay hay không mà còn phải xem có đủ dữ liệu để kiểm chứng và đo lường kết quả không
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Trong quá trình làm bài, nhóm có đưa ra ý tưởng dùng AI để tóm tắt tài liệu giúp người học tiết kiệm thời gian. Tuy nhiên, khi xem xét lại, nhóm nhận ra chưa chắc AI đã cần thiết vì người học có thể đọc mục lục, kết luận hoặc sử dụng câu hỏi định hướng. Vì vậy, nhóm quay lại phân tích vấn đề chính là người học chưa biết phần nào cần đọc kỹ, thay vì tập trung ngay vào việc xây dựng công cụ AI
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Khi làm phần quy trình trước và sau, ban đầu tôi nghĩ rằng chỉ cần giảm thời gian đọc tài liệu là giải pháp đã hiệu quả. Nhưng sau khi xem các câu hỏi phản biện của nhóm, tôi nhận ra đọc nhanh hơn chưa chắc đã hiểu bài tốt hơn. Vì vậy, trong phần CP5, tôi bổ sung bước người học tự kiểm tra kiến thức và đối chiếu nội dung AI đưa ra với tài liệu gốc. Tôi cũng đưa thêm chỉ số đánh giá mức hiểu bài thay vì chỉ đo thời gian
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Điều tôi thấy đáng chú ý là hai tình huống PV01 và PV02 có nguyên nhân mất thời gian khác nhau. PV01 mất nhiều thời gian vì không biết phần nào quan trọng nên phải đọc tuần tự. Trong khi đó, PV02 đã biết phần cần đọc nhưng lại mất thời gian tra thuật ngữ và kiến thức nền. Điều này cho thấy không thể dùng một cách giải quyết cho tất cả người học. Tuy nhiên, đây mới là các tình huống mô phỏng, chưa phải kết quả phỏng vấn thực tế nên nhóm vẫn cần kiểm chứng thêm
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Theo tôi, khó nhất là xác định đúng bottleneck và đưa ra các chỉ số đo lường hợp lý. Ban đầu, việc mô tả vấn đề khá dễ nhưng khi phải ghi rõ thời gian hiện tại, mục tiêu cải thiện và cách đo thì khó hơn vì nhóm chưa có đủ dữ liệu thực tế. Khi làm CP5, tôi phải phân biệt rõ thời gian 60 phút/bài là số liệu tham khảo, còn mục tiêu dưới 30 phút/bài chỉ là kỳ vọng. Ngoài ra, tôi cũng phải xác định giới hạn của AI và những bước bắt buộc con người phải kiểm tra
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ đề xuất nhóm phỏng vấn người học thật và đo thời gian từng bước ngay từ đầu, thay vì dựa nhiều vào số liệu ước tính hoặc mô phỏng. Tôi cũng muốn thử cách đọc không dùng AI trước để xem có tiết kiệm được thời gian không. Khi phản biện, tôi sẽ tập trung hỏi rõ hơn về bằng chứng của vấn đề, nguyên nhân gây mất thời gian và cách đánh giá hiệu quả. Tôi nghĩ việc này sẽ giúp nhóm chọn giải pháp phù hợp hơn và tránh phụ thuộc vào AI quá sớm
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Vấn đề nhóm chọn là người học mất nhiều thời gian đọc tài liệu 10–20 trang trước buổi học vì chưa biết phần nào quan trọng. Quy trình hiện tại là đọc tuần tự, gạch ý chính rồi ghi chú, mất khoảng 60 phút/bài. Nhóm đề xuất quy trình mới có AI hỗ trợ tìm ý chính và gợi ý phần cần đọc kỹ. Metric là giảm thời gian chuẩn bị xuống tối đa 30 phút nhưng vẫn đảm bảo mức hiểu bài. Boundary là AI không được tự quyết định nội dung đúng sai, người học phải kiểm tra lại với tài liệu gốc. Mức can thiệp đề xuất là AI Workflow kết hợp Rule và Human-in-the-loop, không cần Agent tự động hoàn toàn. Quyết định hiện tại là Not Yet vì nhóm chưa có đủ bằng chứng thực tế để chứng minh giải pháp hiệu quả
 ---
 
 ## 7. Tài liệu tham khảo
