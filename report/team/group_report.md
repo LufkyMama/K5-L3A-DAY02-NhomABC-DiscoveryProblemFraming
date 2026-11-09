@@ -21,9 +21,9 @@
 | 1 | Bùi Thế Anh | Khi chuẩn bị nộp bài lab, tôi muốn xác định bài còn thiếu yêu cầu nào, để sửa đủ trước deadline | Sinh viên làm bài lab | Đối chiếu từng yêu cầu với nội dung bài: 25 phút/bài | |
 | 2 | Bùi Thế Anh | Khi ôn thi một môn, tôi muốn tìm đủ tài liệu liên quan, để giảm thời gian tìm giữa slide, ghi chú và tin nhắn | Sinh viên ôn thi | Tìm trong các thư mục/kênh lưu: 7 phút/lần | |
 | 3 | Bùi Thế Anh | Khi cuối tháng kiểm tra chi tiêu, tôi muốn tổng hợp khoản chi tiền mặt và chuyển khoản, để biết mình đã vượt ngân sách ở đâu | Sinh viên tự quản lý chi tiêu | Tra lại hoặc nhớ mục đích các khoản chưa rõ: 25 phút/tháng | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 4 | Nguyễn Hoa Thanh Tùng | Khi chọn đề tài đồ án, tôi muốn so sánh 5-7 bài báo cùng chủ đề theo phương pháp và kết quả, để chọn hướng khả thi | Sinh viên năm cuối chọn đề tài đồ án, đọc bài báo tiếng Anh | Đọc 5-7 bài (20-40 trang/bài) và ghi chú phương pháp, kết quả: 2-3 ngày | |
+| 5 | Nguyễn Hoa Thanh Tùng | Khi viết báo cáo thực tập, tôi muốn gom nhật ký công việc hằng ngày thành các mục theo tuần, để không phải nhớ lại cuối kỳ | Thực tập sinh nộp báo cáo cho trường và mentor | Đọc lại nhật ký 8-10 tuần, phân loại và viết thành mục báo cáo: 3-4 giờ (ước tính) | |
+| 6 | Nguyễn Hoa Thanh Tùng | Khi chuẩn bị thuyết trình nhóm, tôi muốn biết slide nào bị trùng nội dung hoặc thiếu ý so với dàn bài, để buổi chạy thử không phải sửa lại | Nhóm 3-5 sinh viên làm bài thuyết trình 15-20 slide | Rà soát 15-20 slide đối chiếu dàn bài: 20-30 phút (ước tính), vẫn sót đến buổi chạy thử | |
 | 7 | | | | | |
 | 8 | | | | | |
 | 9 | | | | | |
