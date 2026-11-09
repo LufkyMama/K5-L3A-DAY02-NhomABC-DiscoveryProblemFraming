@@ -112,33 +112,29 @@ Phạm vi: candidate #7 — chuẩn bị bài đọc 10–20 trang trước bu�
 
 **Kế hoạch phỏng vấn thật:** 2 người học ngoài nhóm, khoảng 5 phút/người, từng đọc tài liệu trước buổi học gần đây.
 
+> Hai snapshot dưới đây là dữ liệu mô phỏng do AI tạo, chưa phải phỏng vấn thật. Nhân vật, số liệu và lời thoại đều giả định.
+
 **Interview Snapshot PV01**
 
-| Trường | Nội dung mô phỏng |
+| Trường | Nội dung |
 |---|---|
-| Nguyễn Trường An | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành. |
-| Thời điểm, hình thức, người phỏng vấn | Trò chuyện trực tiếp sau giờ học, khoảng 5 phút. |
-| Lần gần nhất: tài liệu, số trang, việc đã xảy ra | “Buổi trước mình được giao đọc 18 trang về hồi quy tuyến tính. Mình chưa biết phần nào sẽ dùng trên lớp nên đọc từ đầu, rồi mới chọn ý để ghi.” |
-| Quy trình, thời gian từng bước và nguồn số liệu | Lướt mục lục 5' → đọc tuần tự 30' → gạch ý 10' → ghi chú 10' → đánh dấu câu hỏi 5'. Phải đọc tuần tự để tìm phần quan trọng. |
-| Workaround và kết quả thực tế | “Mình gạch những câu có vẻ quan trọng, đọc lại kết luận rồi chép vào ghi chú. Cuối cùng ghi khá nhiều nhưng khó chọn vài ý để trả lời câu hỏi trên lớp.” |
-| Ảnh hưởng khi vào lớp và cách tự kiểm | “Mình nhớ định nghĩa nhưng khi được hỏi khi nào nên dùng mô hình thì phải mở lại tài liệu. Trước buổi học mình chưa tự trả lời câu hỏi nào.” |
-| Tần suất và trường hợp đọc nhanh | “Khoảng 3 bài/tuần, tức 6 bài trong hai tuần. Bài nào giảng viên cho câu hỏi trước thì mình dễ chọn đoạn để đọc hơn, nhưng chưa ghi thời gian để so sánh.” |
-| Câu nói đáng nhớ | “Mình đọc hết rồi mới biết đoạn nào cần ghi kỹ.” |
-| Tín hiệu xác nhận, phản bác và insight | |
+| Nguyễn Trường An | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành (nhân vật giả định). |
+| Câu nói đáng nhớ nhất (nguyên văn) | “Mình đọc hết rồi mới biết đoạn nào cần ghi kỹ.” |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Trong kịch bản, sinh viên được giao đọc 18 trang về hồi quy tuyến tính trước buổi học. Vì chưa biết phần nào quan trọng nên đọc từ đầu rồi mới ghi ý; khi vào lớp vẫn phải mở lại tài liệu để giải thích khi nào dùng mô hình. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Gạch câu có vẻ quan trọng, đọc lại tiêu đề và kết luận rồi chép vào ghi chú. Bài nào có câu hỏi định hướng trước thì dễ chọn đoạn để đọc hơn, nhưng chưa so sánh thời gian. |
+| Mất bao lâu, bao lần? | Giả định 60 phút/bài, 3 bài/tuần: lướt 5' → đọc tuần tự 30' → gạch ý 10' → ghi chú 10' → đánh dấu câu hỏi 5'. Số liệu mô phỏng, chưa đo thực tế. |
+| Insight / opportunity rút ra | Cần xác định phần phải đọc kỹ theo mục tiêu buổi học. Tuy nhiên, nhân vật chưa thử đọc theo câu hỏi định hướng nên chưa thể kết luận cần AI; giữ No AI làm đối chứng. |
 
 **Interview Snapshot PV02**
 
-| Trường | Nội dung mô phỏng |
+| Trường | Nội dung |
 |---|---|
-| Nguyễn Thị Bích | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất. Không có người tham gia thực tế. |
-| Thời điểm, hình thức, người phỏng vấn | Trao đổi qua cuộc gọi khoảng 5 phút sau khi chuẩn bị bài. |
-| Lần gần nhất: tài liệu, số trang, việc đã xảy ra | “Mình đọc 15 trang về đánh giá mô hình. Giảng viên đã chỉ phần cần đọc, nhưng mình phải dừng ở các thuật ngữ precision, recall và xác suất có điều kiện.” |
-| Quy trình, thời gian từng bước và nguồn số liệu | Chọn phần cần đọc 5' → đọc phần liên quan 10' → tra thuật ngữ/kiến thức nền 25' → ghi chú 10' → ghi câu hỏi 5'. |
-| Workaround và kết quả thực tế | “Mình tra từ điển và mở slide cũ. Có lần đọc bản tóm tắt do bạn chia sẻ thì biết nội dung nói về gì, nhưng vẫn phải xem ví dụ mới hiểu.” |
-| Ảnh hưởng khi vào lớp và cách tự kiểm | “Mình nhận ra công thức nhưng chưa giải thích được vì sao chọn chỉ số đó cho bài toán. Khi làm ví dụ mới thấy mình chưa hiểu đủ.” |
-| Tần suất và trường hợp đọc nhanh | “Mỗi tuần khoảng 2 bài, hai tuần gần đây là 4 bài. Với chủ đề đã học thì mình ít phải tra cứu hơn; mình chưa bấm giờ từng bài.” |
-| Câu nói đáng nhớ | “Mình biết cần đọc phần nào, nhưng chưa hiểu thuật ngữ trong phần đó.” |
-| Tín hiệu xác nhận, phản bác và insight | |
+| Nguyễn Thị Bích | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất (nhân vật giả định). |
+| Câu nói đáng nhớ nhất (nguyên văn) | “Mình biết cần đọc phần nào, nhưng chưa hiểu thuật ngữ trong phần đó.” |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Trong kịch bản, sinh viên đọc 15 trang về đánh giá mô hình. Dù giảng viên đã chỉ phần cần đọc, sinh viên vẫn phải tra precision, recall và xác suất có điều kiện; khi làm ví dụ mới nhận ra chưa giải thích được cách chọn chỉ số. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Tra từ điển, mở slide cũ và xem ví dụ. Bản tóm tắt bạn chia sẻ giúp biết chủ đề nhưng chưa đủ để hiểu khái niệm; với chủ đề quen thì ít phải tra cứu hơn. |
+| Mất bao lâu, bao lần? | Giả định 55 phút/bài, 2 bài/tuần: chọn phần cần đọc 5' → đọc phần liên quan 10' → tra thuật ngữ/kiến thức nền 25' → ghi chú 10' → ghi câu hỏi 5'. Số liệu mô phỏng, chưa đo thực tế. |
+| Insight / opportunity rút ra | Bottleneck trong kịch bản là hiểu thuật ngữ và kiến thức nền, không phải tìm ý chính. Cần tách nhu cầu giải thích khái niệm khỏi nhu cầu định hướng đọc; tóm tắt ngắn hơn chưa giải quyết nguyên nhân. |
 
 **Tổng hợp hiện có:**
 
