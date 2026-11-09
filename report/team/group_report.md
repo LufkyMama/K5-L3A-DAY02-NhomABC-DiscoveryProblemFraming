@@ -177,36 +177,98 @@ Phạm vi: candidate #7 — chuẩn bị bài đọc 10–20 trang trước bu�
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+Bối cảnh: Học viên được giao đọc tài liệu dài 10–20 trang trước buổi học, thường 2–3 bài/tuần. Người học phải tự đọc, xác định ý chính và ghi chú để chuẩn bị cho buổi học.
+Sơ đồ quy trình hiện tại (Mermaid):
 
+flowchart TD
+    A["Nhận tài liệu 10–20 trang từ giảng viên"]
+    B["Lướt mục lục và cấu trúc tài liệu"]
+    C["Đọc tuần tự để tìm nội dung quan trọng"]
+    D["Gạch chân và lựa chọn ý chính"]
+    E["Ghi chú và tổng hợp kiến thức"]
+    F["Đánh dấu câu hỏi chưa hiểu"]
+    G["Hoàn thành chuẩn bị bài"]
+    A --> B --> C --> D --> E --> F --> G
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 |Học viên |Tài liệu PDF 10–20 trang |Xác định chủ đề, cấu trúc tài liệu |5 phút/bài |Lướt mục lục, tiêu đề |
+| 2 |Học viên |Toàn bộ nội dung tài liệu |Xác định các đoạn có thể quan trọng |30 phút/bài |Phải đọc tuần tự vì chưa biết phần cần tập trung |
+| 3 |Học viên |Nội dung đã đọc |Các ý được gạch chân |10 phút/bài |Tự đánh giá mức độ quan trọng |
+| 4 |Học viên |Các ý đã đánh dấu |Ghi chú kiến thức chính |10 phút/bài |Có thể ghi nhiều nhưng thiếu trọng tâm |
+| 5 |Học viên |Ghi chú và phần chưa hiểu |Danh sách câu hỏi cần làm rõ |5 phút/bài |Chưa có bước tự kiểm tra mức hiểu bài |
 
-**Bottleneck chính:**
+**Bottleneck chính:** 
+Bước 2 – Đọc tuần tự tài liệu để xác định nội dung quan trọng.
+
+Chiếm khoảng 30–35 phút trong tổng 60 phút chuẩn bị.
+
+Người học chưa biết phần nào cần đọc kỹ theo mục tiêu buổi học.
+
+Phải đọc nhiều nội dung trước khi xác định được ý chính.
+
+Dễ ghi chú dàn trải, chưa phân biệt kiến thức cốt lõi và bổ sung.
+
+Chưa có bước tự kiểm tra để xác định mức độ hiểu và vận dụng kiến thức.
+Bằng chứng và giới hạn:
+
+Báo cáo cá nhân của Minh: khoảng 60 phút/bài, trong đó đọc toàn bộ khoảng 35 phút.
+
+PV01 (mô phỏng): đọc tuần tự 30 phút, sau đó mới xác định nội dung cần ghi chú.
+
+PV02 (mô phỏng): bottleneck nằm ở tra thuật ngữ và kiến thức nền, không phải xác định ý chính.
+
+Các số liệu hiện tại là dữ liệu tự báo cáo hoặc mô phỏng, chưa được xác nhận bằng thử nghiệm thực tế với người học ngoài nhóm.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+Mục tiêu: Giảm thời gian chuẩn bị bài bằng cách giúp người học xác định sớm nội dung quan trọng, đồng thời duy trì khả năng hiểu và vận dụng kiến thức.
 
+Giải pháp đề xuất: Workflow kết hợp Rule + AI + Human-in-the-loop (HITL), ưu tiên thử công cụ có sẵn như Google NotebookLM hoặc Adobe Acrobat AI Assistant thay vì phát triển hệ thống mới.
+
+Sơ đồ quy trình tương lai (Mermaid):
+
+flowchart TD
+    A["Học viên nhận tài liệu 10–20 trang"]
+    B["HUMAN: Xác định mục tiêu đọc"]
+    C["RULE: Kiểm tra file, cấu trúc và nguồn"]
+    D{"Tài liệu hợp lệ?"}
+    E["AI: Trích xuất ý chính và gợi ý phần cần đọc kỹ"]
+    F["HUMAN: Kiểm tra dẫn nguồn với tài liệu gốc"]
+    G{"Thông tin chính xác và đầy đủ?"}
+    H["HUMAN: Đọc kỹ các đoạn quan trọng"]
+    I["HUMAN: Ghi chú và tự trả lời câu hỏi kiểm tra"]
+    J{"Đã hiểu nội dung chính?"}
+    K["Hoàn thành chuẩn bị bài"]
+    L["Fallback: Đọc thủ công theo mục lục và câu hỏi định hướng"]
+    M["Quay lại tài liệu gốc để bổ sung kiến thức"]
+
+    A --> B --> C --> D
+    D -->|Có| E
+    D -->|Không| L
+    E --> F --> G
+    G -->|Có| H
+    G -->|Không| L
+    L --> H
+    H --> I --> J
+    J -->|Có| K
+    J -->|Chưa| M
+    M --> H
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước |5 bước |6 bước |Tăng bước kiểm tra nhưng giảm thời gian đọc dàn trải |
+| Tổng thời gian |Khoảng 60 phút/bài |Mục tiêu ≤ 30 phút/bài |Cần bấm giờ thực tế để xác nhận |
+| Số bước thủ công |5/5 bước |4/6 bước chính do Human thực hiện |Rule kiểm tra đầu vào, AI hỗ trợ rút ý; con người vẫn kiểm chứng |
+| Bottleneck chính |Đọc tuần tự 30–35 phút để tìm phần quan trọng |Kiểm chứng ý chính và đọc kỹ các đoạn liên quan |Mục tiêu giảm thời gian đọc không có định hướng |
+| Rủi ro mới phát sinh |Bỏ sót ý quan trọng, ghi chú dàn trải, chưa tự kiểm mức hiểu |AI tóm tắt sai, thiếu ý, dẫn nguồn sai hoặc người học quá phụ thuộc AI |Bắt buộc kiểm nguồn và tự kiểm mức hiểu |
 
 ---
 
@@ -214,17 +276,31 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Học viên/sinh viên thường xuyên phải đọc tài liệu học tập dài 10–20 trang trước buổi học, đặc biệt là người chưa quen với nội dung chuyên ngành|
+| **Quy trình** |Nhận tài liệu từ giảng viên → xem mục lục → đọc tuần tự toàn bộ tài liệu → xác định và gạch ý chính → ghi chú → đánh dấu câu hỏi chưa hiểu. Quy trình hiện mất khoảng 60 phút/bài, lặp lại 2–3 lần/tuần theo báo cáo cá nhân ban đầu |
+| **Bottleneck** |Người học chưa biết phần nào quan trọng theo mục tiêu buổi học nên phải đọc tuần tự 30–35 phút để xác định nội dung cần tập trung. Việc này làm tăng thời gian chuẩn bị, dễ ghi chú dàn trải và bỏ sót kiến thức quan trọng |
+| **Impact** |Tốn khoảng 120–180 phút/tuần cho 2–3 bài đọc; người học có thể ghi nhớ định nghĩa nhưng chưa hiểu rõ cách vận dụng kiến thức. Thời gian chuẩn bị dài cũng làm giảm thời gian dành cho ôn tập và thực hành |
+| **Success Metric** (baseline → target, cách đo) |Thời gian chuẩn bị: khoảng 60 → ≤ 30 phút/bài, đo bằng bấm giờ thực tế. Thời gian tìm ý chính: 30–35 → ≤ 10 phút/bài. Chất lượng hiểu bài: chưa có baseline → không thấp hơn phương án No AI, đo bằng 5 câu hỏi hiểu và vận dụng. Độ chính xác ý chính: chưa có baseline → ≥ 90%, đối chiếu với tài liệu gốc và tiêu chí đánh giá. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) |AI chỉ hỗ trợ xác định ý chính, gợi ý phần cần đọc kỹ và tạo câu hỏi định hướng có dẫn nguồn. AI không được tự tạo thông tin, dẫn nguồn hoặc khẳng định nội dung chắc chắn xuất hiện trong buổi học. Người học phải kiểm tra các ý quan trọng với tài liệu gốc trước khi sử dụng, tự đọc phần liên quan và tự đánh giá mức hiểu bài. Khi AI sai, thiếu nguồn hoặc không xử lý được tài liệu, quay về quy trình đọc thủ công có câu hỏi định hướng. |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
 -
+Phản biện 1: Nếu chỉ đọc mục lục, tóm tắt, kết luận và sử dụng câu hỏi định hướng thì có thể giảm thời gian mà không cần AI
 
+Phản hồi: Nhóm đồng ý. Cần thử nghiệm phương án No AI trước để xác định liệu AI có mang lại lợi ích bổ sung đáng kể hay không
+
+Phản biện 2: AI có thể tóm tắt thiếu kiến thức quan trọng, khiến người học hiểu sai hoặc bỏ sót nội dung
+
+Phản hồi: Nhóm đồng ý. Quy trình phải có bước kiểm tra dẫn nguồn (HITL), đọc lại nội dung gốc và đánh giá mức hiểu bài bằng câu hỏi độc lập
+
+Phản biện 3: Giảm thời gian đọc không đồng nghĩa với việc người học hiểu bài tốt hơn
+
+Phản hồi: Nhóm đồng ý. Ngoài thời gian chuẩn bị, cần đo khả năng hiểu và vận dụng kiến thức. Chỉ coi giải pháp thành công khi tiết kiệm thời gian mà không làm giảm chất lượng học tập
+
+Phản biện 4: Bottleneck có thể nằm ở việc thiếu kiến thức nền hoặc không hiểu thuật ngữ, thay vì không xác định được ý chính
+
+Phản hồi: Nhóm đồng ý. PV02 mô phỏng đã minh họa trường hợp này. Vì vậy, nhóm giới hạn phạm vi vào người học gặp khó khăn trong việc xác định phần cần đọc kỹ; trường hợp thiếu kiến thức nền cần được đánh giá riêng
 ---
 
 ## 6. Mức can thiệp AI (CP6)
