@@ -69,7 +69,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 ### 2.4. Chấm điểm shortlist
 
-**Shortlist đề xuất:** #7 Chuẩn bị bài đọc, #1 Kiểm tra bài lab và #4 So sánh bài báo chọn đề tài. Ba candidate có actor, đầu vào và đầu ra tương đối rõ, đồng thời đại diện cho bài toán đọc hiểu, đối chiếu yêu cầu và tổng hợp nghiên cứu.
+**Nhóm đề xuất:** #7 Chuẩn bị bài đọc, #1 Kiểm tra bài lab và #4 So sánh bài báo chọn đề tài. Ba candidate có actor, đầu vào và đầu ra tương đối rõ, đồng thời đại diện cho bài toán đọc hiểu, đối chiếu yêu cầu và tổng hợp nghiên cứu.
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
