@@ -116,7 +116,7 @@ Phạm vi: candidate #7 — chuẩn bị bài đọc 10-20 trang trước buổi
 
 | Trường | Nội dung |
 |---|---|
-| Nguyễn Trường An | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành. |
+| Người được hỏi | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành. |
 | Câu nói đáng nhớ nhất | “Mình đọc hết rồi mới biết đoạn nào cần ghi kỹ.” |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sinh viên được giao đọc 18 trang về hồi quy tuyến tính trước buổi học. Vì chưa biết phần nào quan trọng nên đọc từ đầu rồi mới ghi ý; khi vào lớp vẫn phải mở lại tài liệu để giải thích khi nào dùng mô hình. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Gạch câu có vẻ quan trọng, đọc lại tiêu đề và kết luận rồi chép vào ghi chú. Bài nào có câu hỏi định hướng trước thì dễ chọn đoạn để đọc hơn, nhưng chưa so sánh thời gian. |
@@ -127,7 +127,7 @@ Phạm vi: candidate #7 — chuẩn bị bài đọc 10-20 trang trước buổi
 
 | Trường | Nội dung |
 |---|---|
-| Nguyễn Thị Bích | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất. |
+| Người được hỏi | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất. |
 | Câu nói đáng nhớ nhất | “Mình biết cần đọc phần nào, nhưng chưa hiểu thuật ngữ trong phần đó.” |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sinh viên đọc 15 trang về đánh giá mô hình. Dù giảng viên đã chỉ phần cần đọc, sinh viên vẫn phải tra precision, recall và xác suất có điều kiện; khi làm ví dụ mới nhận ra chưa giải thích được cách chọn chỉ số. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Tra từ điển, mở slide cũ và xem ví dụ. Bản tóm tắt bạn chia sẻ giúp biết chủ đề nhưng chưa đủ để hiểu khái niệm; với chủ đề quen thì ít phải tra cứu hơn. |
