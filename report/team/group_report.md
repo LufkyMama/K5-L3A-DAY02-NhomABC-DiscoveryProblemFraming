@@ -8,7 +8,7 @@
 - Tên nhóm:
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối: Not Yet
 
 ---
 
@@ -354,29 +354,34 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Học viên/sinh viên phải đọc tài liệu học tập 10-20 trang trước buổi học, 2-3 bài/tuần, **và chưa biết phần nào cần đọc kỹ theo mục tiêu buổi học**. Không bao gồm người học đã biết phần cần đọc nhưng vướng thuật ngữ/kiến thức nền (trường hợp PV02) |
+| **Quy trình** | Nhận tài liệu → xem mục lục → đọc tuần tự toàn bộ → gạch ý chính → ghi chú → đánh dấu câu hỏi chưa hiểu. Khoảng 60 phút/bài |
+| **Bottleneck** | Bước 2: đọc tuần tự 30-35 phút chỉ để xác định nội dung cần tập trung, vì chưa có mục tiêu đọc rõ |
+| **Impact** | 120-180 phút/tuần cho 2-3 bài; ghi chú dàn trải, nhớ định nghĩa nhưng chưa vận dụng được (PV01 mô phỏng). Số liệu là tự báo cáo + mô phỏng, chưa đo thật |
+| **Success Metric** (baseline → target, cách đo) | (1) Thời gian chuẩn bị: ~60 → ≤ 30 phút/bài, bấm giờ từng bài; (2) Thời gian xác định phần cần đọc kỹ: 30-35 → ≤ 10 phút/bài; (3) Điểm 5 câu hỏi hiểu và vận dụng (câu hỏi lấy từ mục tiêu buổi học, không lấy từ bản tóm tắt của AI): **không thấp hơn phương án No AI** trên cùng loại tài liệu; (4) Tỉ lệ ý chính AI đưa ra khớp đúng đoạn nguồn ≥ 90%; (5) Số ý cốt lõi bị bỏ sót (so với danh sách ý cốt lõi của giảng viên/người chấm): 0 |
+| **Boundary** | AI không viết ghi chú thay, không trả lời câu hỏi tự kiểm tra thay, không dùng nguồn ngoài tài liệu được giao, không đưa nhận định không truy được về trang/đoạn gốc. Người học luôn mở đoạn gốc kiểm tra và tự lướt mục lục để phát hiện bỏ sót. Khi AI sai nguồn, thiếu ý hoặc không đọc được file → quay về đọc thủ công theo mục lục + câu hỏi định hướng |
+| **AI intervention point** | Sau khi người học đã viết mục tiêu đọc và Rule đã kiểm tra file hợp lệ; **thay cho bước 2 (đọc tuần tự để tìm phần quan trọng)**, trước bước người học kiểm nguồn và đọc kỹ |
+| **Mức chọn** | **Workflow** (Rule kiểm đầu vào → AI rút 3-5 ý có dẫn nguồn → con người kiểm và đọc kỹ), dùng công cụ có sẵn (NotebookLM hoặc Acrobat AI Assistant). Điều kiện: phải chạy đối chứng No AI trước |
+| **Rủi ro & người kiểm tra** | AI bỏ sót ý cốt lõi, dẫn nguồn sai, bịa ý; người học chỉ đọc tóm tắt mà bỏ tài liệu gốc → **người học** kiểm nguồn từng ý + đối chiếu mục lục; **thành viên nhóm phụ trách pilot** chấm đầu ra AI theo 5 tiêu chí bên dưới và so điểm câu hỏi với nhóm No AI |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Actor | Học viên đọc tài liệu 10-20 trang, đặc biệt người chưa quen nội dung chuyên ngành | Chỉ người **chưa biết phần nào cần đọc kỹ**; loại trường hợp thiếu kiến thức nền | Phản biện 4 + PV02: với người thiếu kiến thức nền, bottleneck là tra thuật ngữ, AI rút ý chính không giải được |
+| Success Metric | Thời gian, độ chính xác ý chính, hiểu bài "không thấp hơn No AI" | Thêm metric **số ý cốt lõi bị bỏ sót = 0**; nêu rõ câu hỏi kiểm tra lấy từ mục tiêu buổi học, không từ tóm tắt AI | CP6 (PAIR): bỏ sót tệ hơn báo nhầm; nếu câu hỏi lấy từ tóm tắt AI thì không lộ được phần bị sót |
+| Boundary | AI không tạo thông tin/dẫn nguồn giả; người học kiểm ý quan trọng | Thêm: AI không viết ghi chú, không trả lời câu hỏi kiểm tra, không dùng nguồn ngoài; người học tự lướt mục lục để phát hiện bỏ sót | PAIR: chọn augment, không automate; bước đối chiếu mục lục đã thêm ở quy trình tương lai (4.2) |
+| AI intervention point, Mức chọn, Rủi ro & người kiểm tra | Chưa có | Đã điền | Bổ sung sau khi so sánh 4 mức ở mục 6 |
 
-**Tiêu chí đánh giá đầu ra của AI (3-5 tiêu chí):**
+**Tiêu chí đánh giá đầu ra của AI:**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Không bỏ sót ý cốt lõi | Mọi ý cốt lõi trong danh sách đối chứng (giảng viên cung cấp hoặc người chấm lập từ mục tiêu buổi học) đều xuất hiện trong 3-5 ý hoặc trong danh sách đoạn cần đọc kỹ | Thiếu ít nhất 1 ý cốt lõi |
+| 2 | Dẫn nguồn đúng | Mỗi ý có số trang/đoạn trích, mở ra đúng đoạn nói về ý đó | Có ý không có nguồn, hoặc nguồn trỏ sai đoạn |
+| 3 | Không bịa, không dùng nguồn ngoài | Mọi nhận định truy được về tài liệu được giao | Có nhận định, ví dụ hoặc số liệu không có trong tài liệu |
+| 4 | Bám mục tiêu đọc | Các ý và đoạn gợi ý trả lời được mục tiêu/câu hỏi định hướng người học đã nhập | Ý chính chung chung kiểu tóm tắt cả tài liệu, không gắn với mục tiêu |
+| 5 | Gọn, đủ để định hướng | 3-5 ý, mỗi ý ≤ 2 câu; danh sách đoạn cần đọc kỹ ≤ 40% số trang tài liệu | Quá 5 ý, lan man, hoặc gợi ý đọc gần như toàn bộ tài liệu (không giảm được bước 2) |
 
 ---
 
@@ -386,31 +391,59 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **Cao** | Bằng chứng duy nhất không phải mô phỏng là báo cáo cá nhân của Minh (1 người trong nhóm). PV01, PV02 là mô phỏng, chưa có phỏng vấn thật; PV02 còn cho thấy bottleneck có thể nằm ở kiến thức nền. Giả định #1, #2 (quan trọng 5, bằng chứng 2) và #3 (bằng chứng 1) chưa được kiểm. Chưa biết phương án No AI đã đủ hay chưa |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | **Trung bình** | Công cụ dễ dùng (tải PDF, đặt câu hỏi, bấm citation). Nhưng giả định #4 (người học chịu mở lại tài liệu gốc) chưa có bằng chứng (điểm 1); rủi ro chỉ đọc tóm tắt đã được nêu ở pitch và phản biện 2. Bước kiểm nguồn + đối chiếu mục lục có thể ăn mất phần thời gian tiết kiệm được |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | **Thấp** | Không cần xây gì: NotebookLM và Acrobat AI Assistant đã có hỏi đáp trên nguồn và citation (research CP4). Đầu vào là PDF giảng viên giao, có sẵn. Rủi ro còn lại: PDF scan không có lớp chữ (đã có bước Rule kiểm đầu vào) |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Trung bình** | Chưa kiểm quyền đưa tài liệu môn học lên công cụ bên ngoài (giả định #6, bằng chứng 1). NotebookLM có bản miễn phí, Acrobat AI Assistant có thể tốn phí. Người học tự vận hành, không cần ai duy trì hệ thống |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** **Not Yet**
 
-**Lý do:**
+**Lý do:** Rủi ro Value ở mức **Cao**: nhóm chưa có bằng chứng thật từ người học ngoài nhóm rằng bottleneck là "không biết phần nào cần đọc kỹ", và chưa biết phương án No AI (đọc theo mục lục + câu hỏi định hướng) có đủ hay không. Feasibility thấp nên khi có bằng chứng thì pilot được ngay mà không cần xây gì, vì vậy không phải No-Go. Nhưng ra Go lúc này là mặc định AI cần thiết, trong khi chính mục 6.2 ghi "chưa có bằng chứng thật rằng No AI không đủ".
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Not Yet — cần kiểm chứng gì trước (1-2 tuần):**
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+1. **Phỏng vấn thật** 3-5 người học ngoài nhóm theo mẫu Interview Snapshot ở 3.2, hỏi về lần đọc gần nhất: thời gian từng bước, bước nào lâu nhất, nguyên nhân là tìm phần quan trọng hay thiếu kiến thức nền (giả định #1, #2). Hỏi thêm: "Lần gần nhất dùng tóm tắt của người khác, bạn có mở lại tài liệu gốc không?" (giả định #4).
+2. **Chạy đối chứng No AI**: 2-3 người đọc 2 bài theo quy trình mục lục → tóm tắt/kết luận → câu hỏi định hướng → chỉ đọc kỹ mục liên quan. Bấm giờ và làm 5 câu hỏi hiểu/vận dụng. Đây là baseline cho metric (3).
+3. **Hỏi giảng viên/quy định lớp** về việc đưa tài liệu môn học lên NotebookLM/Acrobat (giả định #6).
+4. **Thử nhanh công cụ** trên 1-2 tài liệu thật của môn, chấm đầu ra theo 5 tiêu chí ở mục 7 (giả định #5).
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Điều kiện chuyển sang Go (pilot nhỏ nhất):** ít nhất 3/5 người phỏng vấn có bottleneck là tìm phần cần đọc kỹ (≥ 20 phút cho bước này), **và** phương án No AI vẫn trên 30 phút/bài hoặc không áp dụng được với tài liệu không có tóm tắt/câu hỏi định hướng, **và** được phép dùng tài liệu trên công cụ. Khi đó pilot 2 tuần: 3 người học, mỗi người 4 bài, dùng NotebookLM với một câu lệnh chuẩn (mục tiêu đọc + yêu cầu 3-5 ý có số trang), ghi giờ, ghi ý sai/thiếu khi kiểm nguồn, làm 5 câu hỏi kiểm tra. Không xây công cụ.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng:**
+
+- Nếu sau 2 tuần kiểm chứng mà dưới 3/5 người phỏng vấn có bottleneck là tìm phần cần đọc kỹ → **No-Go** cho AI, chuyển sang candidate dự phòng #1 (kiểm bài lab) hoặc xét riêng bài toán thiếu kiến thức nền.
+- Nếu đối chứng No AI đã đạt ≤ 30 phút/bài mà điểm câu hỏi không giảm → **dừng ở No AI**, khuyến nghị quy trình đọc có câu hỏi định hướng + ghi chú có số trang.
+- Nếu giảng viên/lớp không cho đưa tài liệu lên công cụ bên ngoài → **No-Go** cho AI, dùng phương án No AI.
+- Khi đã vào pilot: nếu 2 tuần liên tiếp tổng thời gian (gồm cả kiểm nguồn) vẫn trên 40 phút/bài, **hoặc** điểm 5 câu hỏi thấp hơn nhóm No AI, **hoặc** có ≥ 2 bài AI bỏ sót ý cốt lõi mà người học không phát hiện trước buổi học → dừng pilot, quay về quy trình No AI.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+**Hạn chế:**
+
+- **Bằng chứng chủ yếu là mô phỏng.** PV01 và PV02 do AI mô phỏng, không phải người thật. Số liệu thật duy nhất là báo cáo cá nhân của Minh (1 người trong nhóm, tự báo cáo, chưa rõ số lượt bấm giờ). Mọi con số về thời gian và tần suất ở mục 3-5 chỉ là giả định để thiết kế kiểm chứng.
+- **Chưa có baseline chất lượng hiểu bài.** Metric "điểm 5 câu hỏi không thấp hơn No AI" chưa có số đo nào, cũng chưa có bộ câu hỏi chuẩn hay người chấm.
+- **Chưa thử phương án No AI.** Nhóm chưa biết đọc theo mục lục + câu hỏi định hướng đã đủ hay chưa, nên chưa trả lời được bằng dữ liệu câu "vì sao không chọn mức đơn giản hơn".
+- **Chưa kiểm quyền dùng tài liệu và chi phí công cụ** (giả định #6), và chưa thử NotebookLM/Acrobat trên tài liệu thật của môn (giả định #5).
+- **Phạm vi hẹp có chủ đích:** đã loại trường hợp người học thiếu kiến thức nền/thuật ngữ (PV02), nên kết quả không áp dụng cho nhóm này.
+- Tiêu chí "không bỏ sót ý cốt lõi" cần một danh sách ý cốt lõi đối chứng; nếu giảng viên không cung cấp thì người chấm phải tự lập, có thể chủ quan.
+
+**Hướng tiếp theo:**
+
+1. Trong 1-2 tuần: làm 4 bước kiểm chứng ở mục 8.2 (phỏng vấn thật 3-5 người, đối chứng No AI, hỏi quy định dùng tài liệu, thử công cụ trên 1-2 tài liệu), rồi cập nhật Assumption Map và chấm lại 4 rủi ro.
+2. Ra lại quyết định theo điều kiện Go và ngưỡng dừng đã ghi ở mục 8.2; cập nhật Problem Statement lên v2 nếu actor hoặc bottleneck đổi.
+3. Nếu chuyển sang No-Go: xét candidate dự phòng #1 (kiểm bài lab trước khi nộp), hoặc tách bài toán "thiếu kiến thức nền khi đọc tài liệu" (PV02) thành một candidate riêng.
+4. Candidate #4 (so sánh bài báo chọn đề tài) có thể xét ở vòng sau với phạm vi 2-3 bài cùng chủ đề.
 
 ## 10. Tài liệu tham khảo
 
--
+- Google. *Use chat in Gemini Notebook (NotebookLM)*. https://support.google.com/gemininotebook/answer/16179559?hl=en
+- Adobe. *Get answers with Acrobat AI Assistant*. https://helpx.adobe.com/acrobat/desktop/use-acrobat-ai/generative-ai-features/ai-get-answers.html
+- Adobe. *Acrobat AI Assistant – user disclosures (giới hạn và dẫn nguồn)*. https://helpx.adobe.com/acrobat/desktop/use-acrobat-ai/understand-usage-policies/user-disclosures.html
+- Zotero. *PDF Reader and Note Editor*. https://www.zotero.org/support/pdf_reader
+- Google PAIR. *People + AI Guidebook*. https://pair.withgoogle.com/guidebook/
+- Tài liệu của lab: [docs/01-worksheet.md](../../docs/01-worksheet.md), [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md), [docs/03-international-frameworks.md](../../docs/03-international-frameworks.md)
+- Báo cáo cá nhân của các thành viên: [report/individual/](../individual/)
