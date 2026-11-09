@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Vũ Nguyễn Hoàng Minh | 2A202603541 | Leader | LufkyMama |
-| 2 | | | | |
+| 2 | Bùi Hữu Phúc |2A202603572 |Thành viên |phucbui66 |
 | 3 | | | | |
 | 4 | | | | |
 
