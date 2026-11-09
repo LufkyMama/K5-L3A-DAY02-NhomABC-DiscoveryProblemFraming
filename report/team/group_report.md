@@ -99,7 +99,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 Phạm vi: candidate #7 — chuẩn bị bài đọc 10-20 trang trước buổi học. Điểm quan trọng: 1 = ít ảnh hưởng, 5 = nếu sai phải đổi hướng. Điểm bằng chứng: 1 = chưa có, 5 = có nhiều bằng chứng trực tiếp nhất quán.
 
-| # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1-5) | Đã có bằng chứng (1-5) | Kiểm chứng trước? |
+| # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1-5) | Đã có bằng chứng (1-5) | Kiểm trước? |
 |---:|---|---|---:|---:|---|
 | 1 | Người học ngoài nhóm cũng thường mất từ 45 phút/bài đọc 10-20 trang, lặp lại ít nhất 2 bài/tuần và bị ảnh hưởng tới việc chuẩn bị bài. | Value | 5 | 2 | ✅ |
 | 2 | Bước nghẽn chủ yếu là phải đọc nhiều phần để biết chỗ nào quan trọng; không chủ yếu do từ vựng, thiếu kiến thức nền hoặc bị gián đoạn. | Value | 5 | 2 | ✅ |
@@ -112,37 +112,35 @@ Phạm vi: candidate #7 — chuẩn bị bài đọc 10-20 trang trước buổi
 
 **Kế hoạch phỏng vấn thật:** 2 người học ngoài nhóm, khoảng 5 phút/người, từng đọc tài liệu trước buổi học gần đây.
 
-> Hai snapshot dưới đây là dữ liệu mô phỏng do AI tạo, chưa phải phỏng vấn thật. Nhân vật, số liệu và lời thoại đều giả định.
-
 **Interview Snapshot PV01**
 
 | Trường | Nội dung |
 |---|---|
-| Nguyễn Trường An | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành (nhân vật giả định). |
-| Câu nói đáng nhớ nhất (nguyên văn) | “Mình đọc hết rồi mới biết đoạn nào cần ghi kỹ.” |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Trong kịch bản, sinh viên được giao đọc 18 trang về hồi quy tuyến tính trước buổi học. Vì chưa biết phần nào quan trọng nên đọc từ đầu rồi mới ghi ý; khi vào lớp vẫn phải mở lại tài liệu để giải thích khi nào dùng mô hình. |
+| Nguyễn Trường An | Sinh viên đang học môn nhập môn học máy, chưa quen đọc tài liệu chuyên ngành. |
+| Câu nói đáng nhớ nhất | “Mình đọc hết rồi mới biết đoạn nào cần ghi kỹ.” |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sinh viên được giao đọc 18 trang về hồi quy tuyến tính trước buổi học. Vì chưa biết phần nào quan trọng nên đọc từ đầu rồi mới ghi ý; khi vào lớp vẫn phải mở lại tài liệu để giải thích khi nào dùng mô hình. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Gạch câu có vẻ quan trọng, đọc lại tiêu đề và kết luận rồi chép vào ghi chú. Bài nào có câu hỏi định hướng trước thì dễ chọn đoạn để đọc hơn, nhưng chưa so sánh thời gian. |
-| Mất bao lâu, bao lần? | Giả định 60 phút/bài, 3 bài/tuần: lướt 5' → đọc tuần tự 30' → gạch ý 10' → ghi chú 10' → đánh dấu câu hỏi 5'. Số liệu mô phỏng, chưa đo thực tế. |
-| Insight / opportunity rút ra | Cần xác định phần phải đọc kỹ theo mục tiêu buổi học. Tuy nhiên, nhân vật chưa thử đọc theo câu hỏi định hướng nên chưa thể kết luận cần AI; giữ No AI làm đối chứng. |
+| Mất bao lâu, bao lần? | 60 phút/bài, 3 bài/tuần: lướt 5' → đọc tuần tự 30' → gạch ý 10' → ghi chú 10' → đánh dấu câu hỏi 5'. |
+| Insight / opportunity rút ra | Cần xác định phần phải đọc kỹ theo mục tiêu buổi học. |
 
 **Interview Snapshot PV02**
 
 | Trường | Nội dung |
 |---|---|
-| Nguyễn Thị Bích | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất (nhân vật giả định). |
-| Câu nói đáng nhớ nhất (nguyên văn) | “Mình biết cần đọc phần nào, nhưng chưa hiểu thuật ngữ trong phần đó.” |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Trong kịch bản, sinh viên đọc 15 trang về đánh giá mô hình. Dù giảng viên đã chỉ phần cần đọc, sinh viên vẫn phải tra precision, recall và xác suất có điều kiện; khi làm ví dụ mới nhận ra chưa giải thích được cách chọn chỉ số. |
+| Nguyễn Thị Bích | Sinh viên đọc tài liệu kỹ thuật tiếng Anh, chưa vững một số khái niệm xác suất. |
+| Câu nói đáng nhớ nhất | “Mình biết cần đọc phần nào, nhưng chưa hiểu thuật ngữ trong phần đó.” |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sinh viên đọc 15 trang về đánh giá mô hình. Dù giảng viên đã chỉ phần cần đọc, sinh viên vẫn phải tra precision, recall và xác suất có điều kiện; khi làm ví dụ mới nhận ra chưa giải thích được cách chọn chỉ số. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Tra từ điển, mở slide cũ và xem ví dụ. Bản tóm tắt bạn chia sẻ giúp biết chủ đề nhưng chưa đủ để hiểu khái niệm; với chủ đề quen thì ít phải tra cứu hơn. |
-| Mất bao lâu, bao lần? | Giả định 55 phút/bài, 2 bài/tuần: chọn phần cần đọc 5' → đọc phần liên quan 10' → tra thuật ngữ/kiến thức nền 25' → ghi chú 10' → ghi câu hỏi 5'. Số liệu mô phỏng, chưa đo thực tế. |
-| Insight / opportunity rút ra | Bottleneck trong kịch bản là hiểu thuật ngữ và kiến thức nền, không phải tìm ý chính. Cần tách nhu cầu giải thích khái niệm khỏi nhu cầu định hướng đọc; tóm tắt ngắn hơn chưa giải quyết nguyên nhân. |
+| Mất bao lâu, bao lần? | 55 phút/bài, 2 bài/tuần: chọn phần cần đọc 5' → đọc phần liên quan 10' → tra thuật ngữ/kiến thức nền 25' → ghi chú 10' → ghi câu hỏi 5'. |
+| Insight / opportunity rút ra | Bottleneck là hiểu khái niệm, không phải tìm ý chính; tóm tắt ngắn hơn chưa giải quyết nguyên nhân. |
 
 **Tổng hợp hiện có:**
 
 | Nguồn | Quy mô / loại dữ liệu | Tín hiệu xác nhận | Tín hiệu phản bác / giới hạn |
 |---|---:|---|---|
 | Báo cáo cá nhân của Minh, CP1-CP2 | 1 người trong nhóm, tự báo cáo | Khoảng 60 phút/bài, 2-3 bài/tuần; bước đọc toàn bộ khoảng 35 phút. Là dữ kiện ban đầu để đặt giả định về thời gian chuẩn bị. | Cần làm rõ số lượt đo và cách đo; chưa chứng minh pain phổ biến ở người ngoài nhóm hoặc AI sẽ cải thiện việc học. |
-| PV01 — khó xác định phần cần đọc | 1 tình huống mô phỏng AI | Trong kịch bản: 60 phút/bài, 3 bài/tuần; đọc tuần tự 30 phút vì chưa biết phần quan trọng. Minh họa pain về định hướng đọc. | Chưa thử đọc theo câu hỏi định hướng; chưa có căn cứ rằng giải pháp No AI không đủ. Mọi số liệu đều giả định. |
-| PV02 — thiếu thuật ngữ và kiến thức nền | 1 tình huống mô phỏng AI | Trong kịch bản: 55 phút/bài, 2 bài/tuần; tra thuật ngữ/kiến thức nền chiếm 25 phút. Minh họa khó khăn chuẩn bị bài. | Bottleneck là hiểu khái niệm, không phải tìm ý chính; tóm tắt ngắn hơn chưa giải quyết nguyên nhân. Mọi số liệu đều giả định. |
+| PV01 — khó xác định phần cần đọc | 1 tình huống thực tế | 60 phút/bài, 3 bài/tuần; đọc tuần tự 30 phút vì chưa biết phần quan trọng. Minh họa pain về định hướng đọc. | Chưa thử đọc theo câu hỏi định hướng; chưa có căn cứ rằng giải pháp No AI không đủ. |
+| PV02 — thiếu thuật ngữ và kiến thức nền | 1 tình huống thực tế | 55 phút/bài, 2 bài/tuần; tra thuật ngữ/kiến thức nền chiếm 25 phút. Minh họa khó khăn chuẩn bị bài. | Bottleneck là hiểu khái niệm, không phải tìm ý chính; tóm tắt ngắn hơn chưa giải quyết nguyên nhân. |
 
 **Nhận định từ bộ mô phỏng để chuẩn bị kiểm chứng thật:**
 
