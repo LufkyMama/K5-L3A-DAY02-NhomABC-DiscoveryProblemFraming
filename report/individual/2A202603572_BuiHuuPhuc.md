@@ -20,11 +20,11 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 |Lặp lại|Khi chuẩn bị cập nhật OKR vào cuối tháng , tôi muốn nhanh chóng thu thập các metric từ jira, google data studio để chèn vào slide, tránh việc mở từng báo cáo một  | PM,EM|2h/tuần( mở 3 dashboard, sao chép 5 cột dữ liệu |
-| 2 |Tốn thời gian |Khi nhận phản hồi khách hàng và muốn tổng hợp pain chính cho product-team, tôi phải đọc toàn bộ chuỗi mail và comment trên Confluence |PM,Customer Succes |40-50 phút/Tuần, 10-15 email |
-| 3 |Cần đọc, tổng hợp |Khi đánh giá hiệu xuất, tôi cần đánh giá số story point đã hoàn thành, velocity và bug count qua 4-6 sprint gần nhất |PM,EM,CEO |30 phút/đợt mỗi 2-3 tuần |
-| 4 |Pain từ người khác |khi designer hỏi về định dạng UI đã được chấp nhận trong sprint trước, tôi phải tìm lại các tin nhắn trên Slack + file Figma để trả lời |Designer,PM |12-15 phút/ mỗi yêu cầu, 3-4 yêu cầu/tuần |
-| 5 |Pain từ người khác |khi CEO yêu cầu đánh giá rủi ro của dự án hiện tại trong buổi họp leadership, tôi phải điều tra các issue chưa đóng trong Jira, truy vấn comment trong slack và tham khảo tài liệu Confluence để đưa ra bản tóm tắt ngắn gọn |CEO,PM|20 phút/mỗi lần (họp 2-3 lần/tuần) |
+| 1 |Lặp lại|Khi kéo (pull) code mới từ main để bắt đầu ngày làm việc, tôi muốn đảm bảo môi trường local luôn đồng bộ và không gặp lỗi phụ thuộc, để khởi động công việc ngay trong 5 phút. | DEV, Team Lead |1-2 phút/lần pull, 1-2 lần/ngày |
+| 2 |Tốn thời gian |Khi đánh giá (review) một Pull Request khoảng 300 dòng, tôi muốn phát hiện nhanh các lỗi logic, style & security để đưa ra feedback trong 10 phút, tránh kéo dài vòng review. |DEV, Reviewer |40-50 phút/bản|
+| 3 |Cần đọc, tổng hợp |Khi phân tích log lỗi production sau một sự cố, tôi muốn tìm nguyên nhân gốc bằng cách kết hợp log, metrics và ticket liên quan, để đưa ra đề xuất fix trong 30 phút|DEV, SRE |1-2 sự cố/giờ, tuần khoảng 1-2 sự cố |
+| 4 |Pain từ người khác |Khi designer yêu cầu tôi chuyển đổi một mockup Figma thành component React và muốn xem preview ngay, tôi phải đọc lại spec, tạo component và chạy storybook, mất 15‑20 phút mỗi lần|Designer,DEV |3-4 yêu cầu/tuần, khoảng 18-20 phút/yêu cầu |
+| 5 |Pain từ người khác |Khi QA đưa ra danh sách regression test case mới (khoảng 20‑30 case) và muốn tôi cập nhật test automation trong repo, tôi phải đọc spec, viết script, chạy CI, mất ≈ 40 phút mỗi batch|DEV, QA|1‑2 batch/tuần, ≈ 40 phút/batch |
 | 6 | | | | |
 | 7 | | | | |
 | 8 | | | | |
@@ -41,88 +41,108 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 |Báo cáo tuần |quy trình rõ, tốn thời gian, có baseline thực tế (xấp xỉ 90 phút/ tuần |Đánh giá “narrative đủ tốt” chưa có tiêu chí đo lường |
-| 2 |Review PRD |Pain thực, nhiều người (PM reviewer, design lead) phải đọc 10‑15 trang, thời gian ≈ 45 phút/bản |Độ “chất lượng review” khó đo, ảnh hưởng tới tốc độ phát triển |
-| 3 |Đánh giá rủi ro dự án cho CEO |CEO hỏi rủi ro trong buổi leadership, yêu cầu tổng hợp thông tin từ Jira, Slack, Confluence → ≈ 20 phút/mỗi lần, tần suất 2‑3 / tuần |Không chắc CEO sẽ dùng ngay bản tóm tắt, hoặc muốn chi tiết hơn |
+| 1 |Tóm tắt ngữ cảnh & review Pull Request |Quy trình lặp lại hằng ngày, actor rõ ràng, bottleneck đọc code chiếm phần lớn thời gian, đo lường được baseline |AI có phát hiện được lỗi logic nghiệp vụ sâu hay chỉ soi được syntax/style? |
+| 2 |Điều tra log lỗi Production|Pain point lớn, ảnh hưởng trực tiếp đến SLA/uptime của hệ thống, tốn nhiều chất xám để kết nối các manh mối|Log hệ thống có quá dài/nhiều dữ liệu nhạy cảm khiến context window và bảo mật bị hạn chế không? |
+| 3 |Viết test cases/Unit Test cho feature mới|Tốn thời gian lặp đi lặp lại, dev thường ngại viết test dẫn đến giảm test coverage|Test do AI sinh ra có đúng format framework và mock data hợp lý không? |
 
 ### Problem Card #1
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi tới sáng thứ Hai, tôi muốn có số liệu sprint và tình hình team ở một chỗ, để gửi báo cáo tuần cho CEO trước 10 h. |
-| Actor |Junior PM (Minh) chịu trách nhiệm báo cáo cho Engineering Manager và CEO. |
-| Thời điểm / bối cảnh | Sáng thứ Hai, trước buổi họp leadership lúc 10 h.|
-| Quy trình hiện tại (3–7 bước) | 1. Export dữ liệu Sprint từ Jira 2. lấy số từ google sheet 3. Đọc lại Slack cả tuần  4.tổng hợp vào google docs 5. Viết narrative 6. review và format 7. gửi email|
-| Bottleneck (bước nào, mất bao nhiêu phút) | bước 5. viết narrative khoảng 25 phút (giấy trắng) |
-| Impact (nếu không giải thì sao) | 90 phút/tuần cho 1 PM → ≈ 270 phút/tuần cho 3 PM; 3/8 tuần gần nhất báo cáo trễ, gây mất tin cậy với CEO/EM.|
-| Success metric (baseline → target) | Baseline ≈ 90 phút/tuần → Target < 30 phút/tuần, đồng thời số câu hỏi lại từ CEO/EM không tăng.|
-| Phương án không dùng AI |Template cố định + dashboard Jira + checklist → giảm thời gian format, không giảm thời gian viết narrative. |
-| Giả thuyết về AI (nếu có) | viết phác thảo narrative |
-| Cảm nhận nhanh |Workflow (AI hỗ trợ viết, người dùng kiểm duyệt). |
+| Job Story | Khi nhận được một Pull Request từ đồng nghiệp (200–400 LOC), tôi muốn nhanh chóng hiểu mục đích thay đổi và logic chính, để đưa ra review chất lượng và duyệt PR trong vòng 15 phút|
+| Actor |Senior / Mid Backend Developer đóng vai trò Code Reviewer trong team phát triển. |
+| Thời điểm / bối cảnh | Mỗi khi có thông báo review PR trên GitHub/GitLab trong giờ làm việc (khoảng 3–4 PR/ngày)|
+| Quy trình hiện tại (3–7 bước) |1. Mở PR, đọc description & ticket Jira liên quan
+2. Xem danh sách files changed để nắm cấu trúc
+3. Đọc từng file code, suy luận luồng dữ liệu và tìm lỗi logic
+4. Viết comment góp ý trên từng dòng code 
+5. Approve hoặc Request Changes |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3: Đọc hiểu luồng code và rà soát lỗi logic: mất trung bình 25 phút/PR, rất dễ mệt mỏi và mất tập trung khi PR đổi nhiều file |
+| Impact (nếu không giải thì sao) |PR bị nghẽn (pending review trung bình 1.5 ngày), dev chờ review bị context switching; reviewer đọc vội dễ để lọt bug lên staging/production.|
+| Success metric (baseline → target) | Tổng thời gian review 1 PR giảm từ 47 phút → dưới 20 phút; Tỉ lệ bug lọt qua sau review không tăng|
+| Phương án không dùng AI |Viết PR template bắt buộc ghi rõ thay đổi; giới hạn PR dưới 200 dòng (quy tắc mềm); cấu hình linter/SonarQube tự động bắt lỗi cú pháp/style |
+| Giả thuyết về AI (nếu có) | AI phân tích diff, tóm tắt tóm tắt luồng logic chính, chỉ ra rủi ro tiềm ẩn (edge cases, memory leak, security flaws) để reviewer tập trung kiểm tra|
+| Cảm nhận nhanh |Workflow|
 
 Quy trình nháp hiện tại:
 
 ```text
+HIỆN TẠI — 47 phút/PR
 
+[1. Đọc Jira & PR desc: 5'] → [2. Xem files changed: 5'] 
+→ [3. Đọc hiểu luồng & tìm lỗi: 25'] ← BOTTLENECK
+→ [4. Viết comment: 10'] → [5. Chốt verdict: 2']
 ```
 
 ### Problem Card #2
 
 | Trường | Nội dung |
 |---|---|
-| Job Story |Khi nhận PRD 10–15 trang, tôi muốn nắm nhanh các quyết định chính, để comment đúng chỗ trước hạn. |
-| Actor |PM reviewer (Minh) cùng design lead. |
-| Thời điểm / bối cảnh | Khi PRD mới được đưa lên trong sprint planning (2‑3 lần/tuần).|
-| Quy trình hiện tại (3–7 bước) |1. Mở PRD trong Confluence.
-2. Đọc toàn bộ tài liệu (≈ 45 phút).
-3. Highlight các quyết định/requirement.
-4. Viết comment trên PRD.
-5. Đánh giá lại với designer. |
-| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 2 – đọc toàn bộ tài liệu: ≈ 45 phút/bản. |
-| Impact (nếu không giải thì sao) |45 phút × 2 bản/tuần ≈ 90 phút/tuần cho 1 PM; kéo dài thời gian quyết định, ảnh hưởng tới tốc độ phát triển. |
-| Success metric (baseline → target) |Baseline ≈ 45 phút/bản → Target ≤ 20 phút/bản, độ chính xác comment ≥ 90 % (so với after‑review). |
-| Phương án không dùng AI |Sử dụng checklist để “scan nhanh” các phần quan trọng; giảm nhưng vẫn phải đọc toàn bộ tài liệu. |
-| Giả thuyết về AI (nếu có) | tóm tắt PRD |
-| Cảm nhận nhanh | Workflow (AI tóm tắt, người dùng kiểm tra).|
+| Job Story |	Khi hệ thống bắn alert lỗi 500 trên kênh Slack, tôi muốn nhanh chóng tìm ra file code và dòng gây lỗi cùng payload gây crash, để tạo hotfix trong vòng 30 phút|
+| Actor |On-call Developer / Backend Developer phụ trách trực vận hành|
+| Thời điểm / bối cảnh | Khi có sự cố đột xuất hoặc alert từ Sentry/Datadog gửi về Slack (khoảng 2–3 lần/tuần)|
+| Quy trình hiện tại (3–7 bước) |1. Nhận alert Slack, bấm link mở Sentry/Datadog
+2. Copy error message và trace ID tìm trong log server (Kibana/CloudWatch)
+3. Đọc stack trace, đối chiếu commit code gần nhất để tìm root cause
+4. Tái hiện lỗi ở môi trường local với payload lỗi
+5. Viết code sửa lỗi & tạo hotfix PR |
+| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 3: Đọc stack trace & phân tích commit gần nhất: mất 25 phút, phải lục nhiều tab và liên hệ giữa log trừu tượng với code thực tế|
+| Impact (nếu không giải thì sao) |Thời gian MTTR (Mean Time To Recovery) kéo dài, ảnh hưởng trải nghiệm người dùng cuối, vi phạm SLA hệ thống|
+| Success metric (baseline → target) |Thời gian định vị root cause giảm từ 38 phút (bước 1+2+3) → dưới 10 phút; Tỉ lệ chẩn đoán đúng root cause ngay lần đầu đạt > 80%|
+| Phương án không dùng AI |Thiết lập log tập trung có cấu trúc (structured JSON logging); gắn Source Maps chuẩn xác; viết playbook hướng dẫn triage từng mã lỗi phổ biến|
+| Giả thuyết về AI (nếu có) |AI nhận stack trace + đoạn code nghi ngờ, giải thích nguyên nhân gây crash và đề xuất đoạn patch code gợi ý |
+| Cảm nhận nhanh | Workflow|
 
 Quy trình nháp hiện tại:
 
 ```text
+HIỆN TẠI — 73 phút/sự cố
 
+[1. Nhận alert: 3'] → [2. Tra cứu log server: 10'] 
+→ [3. Đọc stack trace & tìm root cause: 25'] ← BOTTLENECK
+→ [4. Tái hiện local: 15'] → [5. Viết hotfix: 20']
 ```
 
 ### Problem Card #3
 
 | Trường | Nội dung |
 |---|---|
-| Job Story |	Khi CEO chuẩn bị buổi họp leadership, tôi muốn có bản tóm tắt rủi ro dự án (các issue chưa đóng, comment quan trọng), để CEO nắm nhanh tình hình|
-| Actor |Junior PM (Minh) hỗ trợ CEO & leadership team |
-| Thời điểm / bối cảnh |1-2 ngày trước khi diễn ra buổi họp |
-| Quy trình hiện tại (3–7 bước) |1. Truy vấn open issues trong Jira (filter)
-2. Tìm thread liên quan trong Slack (keyword)
-3. Đọc tài liệu Confluence tương ứng
-4. Soạn bản tóm tắt rủi ro (≈ 20 phút) |
-| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 2‑3 – phải đọc nhiều nguồn: tổng cộng ≈ 15 phút mỗi lần |
-| Impact (nếu không giải thì sao) | Nếu không kịp, CEO có thể đến muộn hoặc thiếu thông tin, gây giảm độ tin cậy và quyết định sai|
-| Success metric (baseline → target) |	Baseline ≈ 20 ph phút/đợt → Target ≤ 5 phút/đợt, độ chính xác nội dung ≥ 95 % (so với after‑meeting verification) |
-| Phương án không dùng AI |Tạo template rủi ro và bookmark các query Jira/Slack; vẫn tốn thời gian tìm kiếm thủ công |
+| Job Story |	Khi hoàn thành logic một API endpoint mới, tôi muốn có bộ Unit Test bao phủ đủ các case biên (edge cases), để tự tin merge code mà không làm crash các module khác|
+| Actor |Backend Developer (Node.js/Python/Go)|
+| Thời điểm / bối cảnh |Cuối mỗi sprint task khi chuẩn bị tạo Pull Request (2–3 task/tuần)|
+| Quy trình hiện tại (3–7 bước) |1. Đọc lại requirement để liệt kê các test case cần viết
+2. Viết file setup, mock database và dependencies 
+3. Viết từng test case chi tiết cho các kịch bản thành công và lỗi
+4. Chạy test suite và kiểm tra code coverage
+5. Sửa lỗi test fail|
+| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 3: Viết chi tiết từng test case và chuẩn bị mock data: mất 35 phút, công việc nặng tính boilerplate và gõ phím lặp lại |
+| Impact (nếu không giải thì sao) | Dev có xu hướng bỏ qua test hoặc chỉ viết test sơ sài (happy path), khiến coverage thấp (<50%), kỹ thuật nợ (tech debt) tăng cao|
+| Success metric (baseline → target) |	Thời gian viết test giảm từ 80 phút → dưới 30 phút/task; Unit test coverage duy trì tối thiểu > 75%. |
+| Phương án không dùng AI |Dùng code snippet/boilerplate generator; tái sử dụng các fixture test có sẵn; áp dụng thư viện mock data tự động (Faker) |
 | Giả thuyết về AI (nếu có) | |
 | Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
 
 Quy trình nháp hiện tại:
 
 ```text
+HIỆN TẠI — 80 phút/task
 
+[1. Liệt kê test case: 10'] → [2. Setup mock: 15'] 
+→ [3. Viết test code & mock data: 35'] ← BOTTLENECK
+→ [4. Chạy & đo coverage: 10'] → [5. Debug test fail: 10']
 ```
 
 ### Card muốn pitch nhất
 
-- Card số:1 báo cáo tuần
-- Vì sao: Đây là bottleneck lớn nhất (25 phút mỗi tuần), ảnh hưởng tới toàn bộ team PM, và có baseline đo được; cải thiện sẽ mang lại lợi nhuận thời gian ngay lập tức
-- Câu hỏi muốn nhóm phản biện: 1. Tiêu chí “narrative đủ tốt”: Làm sao đo được chất lượng nội dung sau khi AI soạn?
-2. Mức độ tự động hoá: AI có nên tự gửi email sau khi PM approve, hay để PM luôn là “gatekeeper”?
-3. Rủi ro bảo mật dữ liệu khi AI truy cập dữ liệu Jira/Sheets/Slack – cần kiểm soát gì?
-
+- Card số:1 (Tóm tắt ngữ cảnh & review Pull Request)
+- Vì sao: 1. Tần suất xảy ra mỗi ngày (high frequency), ai làm dev cũng gặp ít nhất 2–4 lần/ngày.
+ 2. Bottleneck rõ ràng: bước "đọc hiểu luồng code" tốn thời gian nhất và gây mệt mỏi nhận thức (cognitive load).
+ 3. Phạm vi vừa vặn để thực nghiệm trong một buổi lab (có thể thử nghiệm ngay với prompt tóm tắt git diff).
+ 4. Ranh giới rõ ràng: AI chỉ hỗ trợ tóm tắt luồng và cảnh báo điểm nóng; quyết định approve/reject vẫn 100% nằm ở người review (Human-in-the-loop).
+- Câu hỏi muốn nhóm phản biện:
+  1. Nếu dựa vào AI để tóm tắt luồng, reviewer có bị tâm lý chủ quan, lướt qua code mà không soi kỹ các lỗi logic ngầm hay không?
+  2. Với các PR lớn (>400 LOC), giới hạn token và context window của mô hình có làm AI bỏ qua các file liên quan không?
+  3. Linter/SonarQube đã làm rất tốt việc bắt lỗi syntax/format, vậy AI thực sự tạo ra giá trị khác biệt ở điểm nào ngoài việc "tóm tắt bằng lời"?
 
 ### AI đã phản biện card thế nào
 
