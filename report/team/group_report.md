@@ -18,9 +18,9 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Bùi Thế Anh | Khi chuẩn bị nộp bài lab, tôi muốn xác định bài còn thiếu yêu cầu nào, để sửa đủ trước deadline. | Bùi Thế Anh — sinh viên làm bài lab | Đối chiếu từng yêu cầu với nội dung bài: 25 phút/bài (giả thuyết từ CP2, thời gian do AI phân bổ, chưa đo thực tế). | |
-| 2 | Bùi Thế Anh | Khi ôn thi một môn, tôi muốn tìm đủ tài liệu liên quan, để giảm thời gian tìm giữa slide, ghi chú và tin nhắn. | Bùi Thế Anh — sinh viên ôn thi | Tìm trong các thư mục/kênh lưu: 7 phút/lần (giả thuyết từ CP2, thời gian do AI phân bổ, chưa đo thực tế). | |
-| 3 | Bùi Thế Anh | Khi cuối tháng kiểm tra chi tiêu, tôi muốn tổng hợp khoản chi tiền mặt và chuyển khoản, để biết mình đã vượt ngân sách ở đâu. | Bùi Thế Anh — sinh viên tự quản lý chi tiêu | Tra lại hoặc nhớ mục đích các khoản chưa rõ: 25 phút/tháng (giả thuyết từ CP2, thời gian do AI phân bổ, chưa đo thực tế). | |
+| 1 | Bùi Thế Anh | Khi chuẩn bị nộp bài lab, tôi muốn xác định bài còn thiếu yêu cầu nào, để sửa đủ trước deadline | Sinh viên làm bài lab | Đối chiếu từng yêu cầu với nội dung bài: 25 phút/bài | |
+| 2 | Bùi Thế Anh | Khi ôn thi một môn, tôi muốn tìm đủ tài liệu liên quan, để giảm thời gian tìm giữa slide, ghi chú và tin nhắn | Sinh viên ôn thi | Tìm trong các thư mục/kênh lưu: 7 phút/lần | |
+| 3 | Bùi Thế Anh | Khi cuối tháng kiểm tra chi tiêu, tôi muốn tổng hợp khoản chi tiền mặt và chuyển khoản, để biết mình đã vượt ngân sách ở đâu | Sinh viên tự quản lý chi tiêu | Tra lại hoặc nhớ mục đích các khoản chưa rõ: 25 phút/tháng | |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
