@@ -67,21 +67,29 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 - "Checklist tự động kiểm bài lab" (#1): là tính năng. Pain thật là khó tự thấy bài còn thiếu yêu cầu nào, nên đưa vào Opportunity C.
 - "Bot tóm tắt Pull Request" (#10) và "AI tự sinh unit test" (#12): tên candidate trong bảng pitch đang viết theo dạng giải pháp. Nhóm viết lại thành pain là "đọc code mất phần lớn thời gian review" (Opportunity A) và "viết test lặp lại nên hay bị bỏ qua" (Opportunity E).
 
-### 2.4. Chấm điểm shortlist (1–5)
+### 2.4. Chấm điểm shortlist
+
+**Shortlist đề xuất:** #7 Chuẩn bị bài đọc, #1 Kiểm tra bài lab và #4 So sánh bài báo chọn đề tài. Ba candidate có actor, đầu vào và đầu ra tương đối rõ, đồng thời đại diện cho bài toán đọc hiểu, đối chiếu yêu cầu và tổng hợp nghiên cứu.
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| #7 — Chuẩn bị bài đọc trước buổi học (Vũ Nguyễn Hoàng Minh) | 5 | 5 | 3 | 4 | 5 | 5 | 5 | **32** |
+| #1 — Kiểm tra bài lab trước khi nộp (Bùi Thế Anh) | 5 | 4 | 2 | 4 | 5 | 5 | 5 | **30** |
+| #4 — So sánh bài báo khi chọn đề tài đồ án (Nguyễn Hoa Thanh Tùng) | 5 | 4 | 3 | 3 | 3 | 5 | 4 | **27** |
 
-**Candidate được chọn:**
+**Candidate được chọn:** #7 — Khi phải đọc tài liệu 10–20 trang trước buổi học, học viên muốn nắm ý chính và phần cần đọc kỹ để vào lớp theo kịp nội dung.
 
 **Vì sao chọn:**
 
-**Vì sao loại các candidate còn lại:**
+- Có tổng điểm đề xuất cao nhất (32/35), phạm vi gọn và tần suất được ghi là 2–3 lần/tuần; thuận lợi để đo lặp lại thay vì chỉ đánh giá một lần.
+- Có thể thu hẹp vào một môn và một loại tài liệu, kiểm chứng với người học ngoài nhóm ở CP4, đồng thời đo cả thời gian chuẩn bị và mức hiểu bài.
+- Có phương án đối chứng không dùng AI: đọc mục lục, tóm tắt, kết luận trước và dùng câu hỏi định hướng. CP4 cần kiểm xem cách này đã đủ chưa; chọn candidate không đồng nghĩa với chốt dùng AI.
+- Có thể so sánh cả 4 mức can thiệp: cải thiện cách đọc (No AI), lọc theo cấu trúc/từ khóa (Rule), các bước cố định có AI hỗ trợ rút ý chính (Workflow), hoặc tự chọn phần cần đọc tiếp theo (Agent). Chưa chọn mức ở CP3; để CP6 đánh giá dựa trên bằng chứng.
 
-**Xử lý bất đồng (nếu có):**
+**Vì sao loại các candidate còn lại khỏi lựa chọn hiện tại:**
+
+- **#1 — Kiểm tra bài lab:** Vẫn là candidate dự phòng tốt, nhưng chưa xác nhận thời gian riêng của bottleneck, mức độ bỏ sót và phần thời gian dành cho sửa bài. Cần thử checklist và kiểm chéo để biết phần khó khăn còn lại trước khi đào sâu.
+- **#4 — So sánh bài báo:** Có tác động tiềm năng lớn, nhưng khối lượng đọc và nhu cầu kiểm tra độ đúng của phương pháp, dataset, kết quả nghiên cứu khiến việc kiểm chứng trong một buổi khó hơn. Có thể xem xét ở vòng sau với phạm vi 2–3 bài cùng chủ đề và người đánh giá phù hợp.
 
 ---
 
