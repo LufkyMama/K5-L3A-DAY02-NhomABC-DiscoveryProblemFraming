@@ -5,10 +5,10 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm:NhomABC
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Not Yet
+- Candidate problem được chọn (1 câu): #7 — Học viên phải đọc tài liệu 10-20 trang trước buổi học (2-3 bài/tuần) mất khoảng 60 phút/bài, trong đó 30-35 phút là đọc tuần tự chỉ để biết phần nào cần đọc kỹ theo mục tiêu buổi học.
+- Quyết định cuối: **Not Yet**. 
 
 ---
 
