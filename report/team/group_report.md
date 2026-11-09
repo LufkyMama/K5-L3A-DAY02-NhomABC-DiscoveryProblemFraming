@@ -35,9 +35,11 @@
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| A — Đọc khối lượng lớn để rút ý chính / nguyên nhân | • #4 So sánh 5–7 bài báo chọn đề tài<br>• #7 Nắm ý chính tài liệu trước buổi học<br>• #10 Tóm tắt ngữ cảnh & review Pull Request<br>• #11 Điều tra log lỗi Production | Phải đọc nhiều nội dung dài hoặc dày đặc, trong đó chỉ một phần quan trọng, rồi rút ý chính hoặc nguyên nhân |
+| B — Tìm thông tin nằm rải rác | • #2 Tìm tài liệu ôn thi<br>• #8 Gom deadline từ nhiều nơi<br>• #9 Tìm lại slide/ghi chú cũ | Thông tin nằm ở nhiều nơi (thư mục, LMS, chat, email), mất thời gian đoán và lục tìm |
+| C — Đối chiếu bản nháp với yêu cầu/chuẩn | • #1 Kiểm bài lab còn thiếu yêu cầu nào<br>• #6 Kiểm slide trùng/thiếu so với dàn bài | So sánh sản phẩm với danh sách yêu cầu hoặc dàn bài để tìm chỗ thiếu, trùng |
+| D — Gom dữ liệu thô thành bản tổng hợp | • #3 Tổng hợp chi tiêu tiền mặt + chuyển khoản<br>• #5 Gom nhật ký thực tập thành báo cáo | Dữ liệu ghi rời rạc theo thời gian, cuối kỳ phải đọc lại, phân loại và viết thành bản gọn |
+| E — Tạo nội dung lặp lại theo khuôn | • #12 Viết test case/unit test cho feature mới | Việc sản xuất cùng một dạng đầu ra lặp đi lặp lại, dễ bị bỏ qua vì nhàm |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
